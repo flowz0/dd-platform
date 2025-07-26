@@ -32,10 +32,10 @@ export default function ReviewsSection() {
   return (
     <section ref={sectionRef}>
       <div className="max-w-7xl mx-auto px-6 flex flex-col items-center">
-        <h2 className="text-h3 font-bold text-center text-black sm:text-h2">
+        <h2 className="text-white10 text-h3 font-bold text-center sm:text-h2">
           What Our <span className="text-primary">Customers</span> Are Saying
         </h2>
-        <p className="mt-4 text-p max-w-xl text-center text-black75">
+        <p className="text-white25 text-p max-w-xl text-center mt-4">
           See why homeowners and businesses trust Duct Daddy for fast, reliable, and professional duct cleaning they can count on.
         </p>
       </div>
