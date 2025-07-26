@@ -1,7 +1,7 @@
 export default function DuctCleaningPage() {
   return (
     <div>
-      <h1>Duct cleaning page</h1>
+      <h1>HVAC cleaning page</h1>
     </div>
   );
 }
