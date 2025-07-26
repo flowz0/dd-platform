@@ -11,14 +11,14 @@ export default function Hero() {
       <Image
         src={KansasCityImg}
         alt="Kansas city, Missouri image"
-        className="h-[880px] w-full object-cover sm:h-[880px]"
+        className="h-[880px] w-full object-cover sm:h-[1000px]"
         priority={true}
         loading="eager"
         quality={100}
         draggable={false}
       />
 
-      <div className="absolute inset-0 z-10 h-[880px] sm:h-[880px]">
+      <div className="absolute inset-0 z-10">
         <div className="max-w-7xl mx-auto px-6 h-full">
           <div className="flex flex-col items-center justify-between h-full">
             <div className="pt-32 flex flex-col items-center sm:pt-48">
@@ -34,17 +34,15 @@ export default function Hero() {
               </Button>
             </div>
 
-            <div>
-              <Image
-                src={DuctDaddyVanImg}
-                alt="Duct Daddy Duct Cleaning van image"
-                className="relative w-fit h-full bottom-[-96px] sm:bottom-[-16px] lg:bottom-24 lg:h-[800px]"
-                priority={true}
-                loading="eager"
-                quality={100}
-                draggable={false}
-              />
-            </div>
+            <Image
+              src={DuctDaddyVanImg}
+              alt="Duct Daddy Duct Cleaning van image"
+              className="relative w-full h-auto bottom-[-160px] sm:bottom-[-360px] md:bottom-[-320px] lg:bottom-[-256px]"
+              priority={true}
+              loading="eager"
+              quality={100}
+              draggable={false}
+            />
           </div>
         </div>
       </div>
