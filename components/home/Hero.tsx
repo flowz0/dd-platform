@@ -15,12 +15,13 @@ export default function Hero() {
         priority={true}
         loading="eager"
         quality={100}
+        draggable={false}
       />
 
       <div className="absolute inset-0 z-10 h-[880px] sm:h-[880px]">
         <div className="max-w-7xl mx-auto px-6 h-full">
           <div className="flex flex-col items-center justify-between h-full">
-            <div className="pt-32 flex flex-col items-center">
+            <div className="pt-32 flex flex-col items-center sm:pt-48">
               <h1 className="text-white10 text-h3 font-bold text-center sm:text-h1">
                 Kansas City&apos;s Trusted {" "}
                 <br className="hidden sm:inline-block" />
@@ -37,10 +38,11 @@ export default function Hero() {
               <Image
                 src={DuctDaddyVanImg}
                 alt="Duct Daddy Duct Cleaning van image"
-                className="relative w-fit h-full bottom-[-96px] sm:bottom-[-96px] md:bottom-[-64px] lg:bottom-8 lg:h-[800px]"
+                className="relative w-fit h-full bottom-[-96px] sm:bottom-[-16px] lg:bottom-24 lg:h-[800px]"
                 priority={true}
                 loading="eager"
                 quality={100}
+                draggable={false}
               />
             </div>
           </div>
