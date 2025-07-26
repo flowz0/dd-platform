@@ -1,3 +1,5 @@
+import Navbar from "@/components/home/Navbar";
+
 export default function HomeLayout({
   children,
 }: Readonly<{
@@ -5,7 +7,7 @@ export default function HomeLayout({
 }>) {
   return (
     <div>
-      <h1>Home layout</h1>
+      <Navbar />
       {children}
     </div>
   );
