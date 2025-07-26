@@ -21,7 +21,7 @@ export default function Hero() {
         <div className="max-w-7xl mx-auto px-6 h-full">
           <div className="flex flex-col items-center justify-between h-full">
             <div className="pt-32 flex flex-col items-center">
-              <h1 className="text-white10 text-h2 font-bold text-center sm:text-h1">
+              <h1 className="text-white10 text-h3 font-bold text-center sm:text-h1">
                 Kansas City&apos;s Trusted {" "}
                 <br className="hidden sm:inline-block" />
                 Air Duct & Dryer Vent {" "}
