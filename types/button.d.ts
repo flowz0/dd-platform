@@ -3,5 +3,5 @@ export interface ButtonProps {
   type?: "button" | "submit";
   onClick?: () => void;
   className?: string;
-  variant?: 'text' | 'contained' | 'outlined'
+  variant?: 'text' | 'primary' | 'secondary' | 'outlined'
 }
