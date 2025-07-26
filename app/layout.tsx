@@ -37,11 +37,60 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "HVACBusiness",
+    name: "Duct Daddy Duct Cleaning",
+    image: "https://www.ductdaddykc.com/assets/duct-daddy-vehicle.png",
+    "@id": "https://www.ductdaddykc.com",
+    url: "https://www.ductdaddykc.com",
+    telephone: "+1-816-708-2608",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "1212 NE White Oaks Ln",
+      addressLocality: "Oak Grove",
+      addressRegion: "MO",
+      postalCode: "64075",
+      addressCountry: "US",
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: 39.02936754700943,
+      longitude: -94.12149446094872,
+    },
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+        ],
+        opens: "00:00",
+        closes: "23:59",
+      },
+    ],
+    priceRange: "$$",
+    sameAs: [
+      "https://www.facebook.com/ductdaddykc",
+      "https://www.tiktok.com/@ductdaddykc",
+    ],
+    description:
+      "Duct Daddy is a family-owned duct cleaning company in Kansas City, Missouri, providing air duct and dryer vent cleaning to improve indoor air quality.",
+  };
+
   return (
     <html lang="en">
       <body
         className={`${arimo.variable} antialiased`}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
         <main>{children}</main>
       </body>
     </html>
