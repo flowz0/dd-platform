@@ -9,7 +9,7 @@ export default function ServiceCard({
   return (
     <div className="bg-white90 py-8 px-8 rounded-lg">
       <div>
-        <Icon className="w-16 h-16" />
+        <Icon className="text-primary w-12 h-12" />
       </div>
       <h4 className="text-white10 text-h5 font-bold mt-8 sm:text-h4">
         {children}
