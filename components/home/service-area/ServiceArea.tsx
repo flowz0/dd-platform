@@ -23,6 +23,9 @@ export default function ServiceAreaSection() {
             src={ServiceAreaImg}
             alt="Service area image"
             className="mt-8 h-auto w-full lg:mt-0"
+            draggable={false}
+            priority={false}
+            loading="lazy"
           />
         </div>
       </div>

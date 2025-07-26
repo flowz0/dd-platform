@@ -22,6 +22,9 @@ export default function CTASection() {
             src={DuctDaddyVan}
             alt="Duct Daddy van image"
             className="absolute h-fit top-16 object-left object-cover w-full md:h-[280px] md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2"
+            draggable={false}
+            priority={false}
+            loading="lazy"
           />
         </div>
       </div>

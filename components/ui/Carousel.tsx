@@ -70,6 +70,7 @@ export default function Carousel({
         priority={false}
         quality={100}
         loading="lazy"
+        draggable={false}
       />
       <button
         type="button"

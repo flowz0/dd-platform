@@ -28,6 +28,7 @@ export default function WhyUsSection() {
               className="h-20 w-fit"
               priority={false}
               quality={80}
+              draggable={false}
             />
             <div>
               <p className="text-white10 text-p font-medium">
