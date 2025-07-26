@@ -11,13 +11,13 @@ export default function Hero() {
       <Image
         src={KansasCityImg}
         alt="Kansas city, Missouri image"
-        className="h-[920px] w-full object-cover sm:h-[880px]"
+        className="h-[880px] w-full object-cover sm:h-[880px]"
         priority={true}
         loading="eager"
         quality={100}
       />
 
-      <div className="absolute inset-0 z-10 h-[920px] sm:h-[880px]">
+      <div className="absolute inset-0 z-10 h-[880px] sm:h-[880px]">
         <div className="max-w-7xl mx-auto px-6 h-full">
           <div className="flex flex-col items-center justify-between h-full">
             <div className="pt-32 flex flex-col items-center">
@@ -28,7 +28,7 @@ export default function Hero() {
                 <br className="hidden sm:inline-block" />
                 Cleaning Experts
               </h1>
-              <Button variant="contained" className="mt-12">
+              <Button variant="primary" className="mt-12">
                 Book online
               </Button>
             </div>
@@ -37,7 +37,7 @@ export default function Hero() {
               <Image
                 src={DuctDaddyVanImg}
                 alt="Duct Daddy Duct Cleaning van image"
-                className="relative w-fit h-full bottom-[-96px] sm:bottom-[-64px] lg:h-[600px]"
+                className="relative w-fit h-full bottom-[-96px] sm:bottom-[-96px] md:bottom-[-64px] lg:bottom-8 lg:h-[800px]"
                 priority={true}
                 loading="eager"
                 quality={100}
