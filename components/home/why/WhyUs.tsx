@@ -5,7 +5,7 @@ import { FaStar } from "react-icons/fa";
 
 import GoogleLogo from "@/public/home/Google.png";
 
-export default function WhyUs() {
+export default function WhyUsSection() {
   return (
     <div className="pt-48 max-w-7xl mx-auto px-6 sm:pt-64">
       <div className="grid grid-cols-1 lg:gap-x-6 lg:grid-cols-2">
