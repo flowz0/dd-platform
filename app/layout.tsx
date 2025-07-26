@@ -42,7 +42,7 @@ export default function RootLayout({
       <body
         className={`${arimo.variable} antialiased`}
       >
-        {children}
+        <main>{children}</main>
       </body>
     </html>
   );
