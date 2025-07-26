@@ -15,14 +15,14 @@ export default function Footer() {
               <Image
                 src={DuctDaddyLogo}
                 alt="Netflows brand"
-                className="h-32 w-auto"
+                className="w-28 h-full"
                 quality={100}
                 priority={false}
                 draggable={false}
                 loading="lazy"
               />
             </Link>
-            <div className="mt-8 sm:mt-0">
+            <div className="mt-8">
               <p className="text-black75 text-small font-inter">
                 ©2025 Duct Daddy, LLC.
               </p>
