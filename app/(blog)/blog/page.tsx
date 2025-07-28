@@ -1,5 +1,6 @@
 import BlogCard from "@/components/blog/BlogCard";
 import Button from "@/components/ui/Button";
+import { FaAngleDown } from "react-icons/fa";
 
 export default function BlogPage() {
   return (
@@ -24,7 +25,7 @@ export default function BlogPage() {
           <BlogCard />
         </div>
         <div className="flex justify-center mt-12">
-          <Button variant="text">Show more blogs</Button>
+          <Button Icon={FaAngleDown} variant="text">Show more blogs</Button>
         </div>
       </div>
     </div>
