@@ -9,7 +9,7 @@ import Link from "next/link";
 import DuctDaddyBrand from "@/public/assets/duct-daddy-brand.png";
 import Button from "../ui/Button";
 import { FaPhoneAlt } from "react-icons/fa";
-import NavbarDropdown from "../navigation/NavbarDropdown";
+import NavbarDropdown from "./NavbarDropdown";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -117,8 +117,8 @@ export default function Navbar() {
                     key={href}
                     href={href}
                     className={`text-h6 font-bold ${pathname === href
-                        ? "text-primary"
-                        : "text-white25 hover:text-white10"
+                      ? "text-primary"
+                      : "text-white25 hover:text-white10"
                       }`}
                   >
                     {label}
@@ -128,23 +128,33 @@ export default function Navbar() {
             </div>
 
           </div>
-          <div className="flex items-center gap-x-4">
-            <Link href="/">
-              <Button
-                Icon={FaPhoneAlt}
-                size="sm"
-                variant="secondary"
-                iconAlign
-                className="hidden lg:flex"
-              >
-                Call us
-              </Button>
-            </Link>
-            <Link href="/booking">
-              <Button size="sm" className="hidden lg:flex" variant="primary">
-                Book online
-              </Button>
-            </Link>
+          <div>
+            {pathname === "/blog" ? (
+              <Link href="/dashboard">
+                <Button size="sm" className="hidden lg:flex" variant="primary">
+                  Dashboard
+                </Button>
+              </Link>
+            ) : (
+              <div className="flex items-center gap-x-4">
+                <Link href="/">
+                  <Button
+                    Icon={FaPhoneAlt}
+                    size="sm"
+                    variant="secondary"
+                    iconAlign
+                    className="hidden lg:flex"
+                  >
+                    Call us
+                  </Button>
+                </Link>
+                <Link href="/booking">
+                  <Button size="sm" className="hidden lg:flex" variant="primary">
+                    Book online
+                  </Button>
+                </Link>
+              </div>
+            )}
           </div>
 
           {/* mobile */}
