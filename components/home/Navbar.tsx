@@ -9,6 +9,7 @@ import Link from "next/link";
 import DuctDaddyBrand from "@/public/assets/duct-daddy-brand.png";
 import Button from "../ui/Button";
 import { FaPhoneAlt } from "react-icons/fa";
+import NavbarDropdown from "../navigation/NavbarDropdown";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -44,14 +45,31 @@ export default function Navbar() {
     { label: "Service Area", href: "/service-area" },
     { label: "Blog", href: "/blog" },
   ];
+  const serviceDropdown = [
+    { label: "Air Duct Cleaning", href: "/services/air-duct-cleaning" },
+    { label: "Dryer Vent Cleaning", href: "/services/dryer-vent-cleaning" },
+    { label: "HVAC Cleaning", href: "/services/hvac-cleaning" },
+  ];
+  const serviceAreaDropdown = [
+    { label: "Oak Grove", href: "/service-area/oak-grove" },
+    { label: "Grain Valley", href: "/service-area/grain-valley" },
+    { label: "Blue Springs", href: "/service-area/blue-springs" },
+    { label: "Lees Summit", href: "/service-area/lees-summit" },
+    { label: "Independence", href: "/service-area/independence" },
+    { label: "Kansas City", href: "/service-area/kansas-city" },
+    { label: "Raymore", href: "/service-area/raymore" },
+    { label: "Raytown", href: "/service-area/raytown" },
+    { label: "Pleasant Hill", href: "/service-area/pleasant-hill" },
+    { label: "Odessa", href: "/service-area/odessa" },
+  ];
 
   return (
     <header className={`h-[100px] w-full fixed z-30 transition-all duration-300 ease-in-out ${isOpen
       ? "bg-white95"
       : isScrolled
-      ? "bg-white95"
-      : "bg-transparent"
-    }`}>
+        ? "bg-white95"
+        : "bg-transparent"
+      }`}>
       <nav className="max-w-7xl mx-auto h-full">
         <div className="flex items-center justify-between h-full px-6">
           <div className="flex items-center justify-center gap-x-12">
@@ -68,28 +86,56 @@ export default function Navbar() {
             </Link>
 
             <div className="hidden md:flex gap-x-8">
-              {Links.map(({ label, href }) => (
-                <Link
-                  key={href}
-                  href={href}
-                  className={`text-h6 font-bold ${(href === "/services" && pathname.startsWith("/services")) || pathname === href
-                    ? 'text-primary'
-                    : 'text-white25 hover:text-white10'
-                    }`}
-                >
-                  {label}
-                </Link>
-              ))}
+              {Links.map(({ label, href }) => {
+                if (label === "Services") {
+                  const isActive = pathname.startsWith("/services");
+                  return (
+                    <NavbarDropdown
+                      key={label}
+                      label="Services"
+                      items={serviceDropdown}
+                      className={isActive ? "text-primary" : "text-white25 hover:text-white10"}
+                    />
+                  );
+                }
+
+                if (label === "Service Area") {
+                  const isActive = pathname.startsWith("/service-area");
+                  return (
+                    <NavbarDropdown
+                      key={label}
+                      label="Service Area"
+                      items={serviceAreaDropdown}
+                      className={isActive ? "text-primary" : "text-white25 hover:text-white10"}
+                    />
+                  );
+                }
+
+                // Default links (About, Blog, etc.)
+                return (
+                  <Link
+                    key={href}
+                    href={href}
+                    className={`text-h6 font-bold ${pathname === href
+                        ? "text-primary"
+                        : "text-white25 hover:text-white10"
+                      }`}
+                  >
+                    {label}
+                  </Link>
+                );
+              })}
             </div>
+
           </div>
           <div className="flex items-center gap-x-4">
             <Link href="/">
-              <Button 
-                Icon={FaPhoneAlt} 
-                size="sm" 
+              <Button
+                Icon={FaPhoneAlt}
+                size="sm"
                 variant="secondary"
                 iconAlign
-                className="hidden lg:flex" 
+                className="hidden lg:flex"
               >
                 Call us
               </Button>
