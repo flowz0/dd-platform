@@ -2,6 +2,4 @@
 Currently in development [WIP]
 
 ## Tech Stack:
-**Frontend:** Next.js, TypeScript, Tailwind CSS
-
-**Backend:** MongoDB, Express, Node.js
+**Frontend:** Next.js, TypeScript, Tailwind CSS, Framer-Motion
