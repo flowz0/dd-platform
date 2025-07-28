@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/flowz0/dd-platform/compare/v1.1.2...v1.1.3) (2025-07-28)
+
+
+### Bug Fixes
+
+* implement new design for service area and service pages ([863473e](https://github.com/flowz0/dd-platform/commit/863473e63c3e939014db9c536ca083589bb0a14a))
+
 ## [1.1.2](https://github.com/flowz0/dd-platform/compare/v1.1.1...v1.1.2) (2025-07-28)
 
 
