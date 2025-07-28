@@ -44,7 +44,7 @@ export default function NavbarDropdown({
             transition={{ duration: 0.2, ease: "easeOut" }}
             className="absolute left-[-16px] top-full w-64 rounded-lg bg-white90 shadow shadow-white50 z-40"
           >
-            <ul className="flex flex-col py-2 px-2">
+            <ul className="flex flex-col py-4 px-2">
               {items.map(({ label, href }) => (
                 <li key={href}>
                   <Link
