@@ -1,7 +1,7 @@
 import CTASection from "@/components/home/CTA";
 import FAQSection from "@/components/home/faqs/FAQs";
 import Footer from "@/components/home/Footer";
-import Navbar from "@/components/home/Navbar";
+import Navbar from "@/components/navigation/Navbar";
 
 export default function BlogLayout({
   children,

@@ -3,7 +3,7 @@ import CTASection from "@/components/home/CTA";
 import FAQSection from "@/components/home/faqs/FAQs";
 import Footer from "@/components/home/Footer";
 import Hero from "@/components/home/Hero";
-import Navbar from "@/components/home/Navbar";
+import Navbar from "@/components/navigation/Navbar";
 import ReviewsSection from "@/components/home/reviews/Reviews";
 import ServiceAreaSection from "@/components/home/service-area/ServiceArea";
 import ServicesSection from "@/components/home/services/Services";
