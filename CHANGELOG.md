@@ -1,3 +1,10 @@
+## [1.1.5](https://github.com/flowz0/dd-platform/compare/v1.1.4...v1.1.5) (2025-07-28)
+
+
+### Bug Fixes
+
+* update NavbarDropdown component menu padding ([dae9ebe](https://github.com/flowz0/dd-platform/commit/dae9ebe2f418214b583c16b55bd46f5116e72b67))
+
 ## [1.1.4](https://github.com/flowz0/dd-platform/compare/v1.1.3...v1.1.4) (2025-07-28)
 
 
