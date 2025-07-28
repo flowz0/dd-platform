@@ -1,3 +1,11 @@
+## [1.1.1](https://github.com/flowz0/dd-platform/compare/v1.1.0...v1.1.1) (2025-07-28)
+
+
+### Bug Fixes
+
+* add schema to app layout ([9b07f53](https://github.com/flowz0/dd-platform/commit/9b07f53c58f7f9e0f64805d1f504c955dafa05ad))
+* implement Blogs, Blog, Home, About, Booking, Privacy, TOS, and internal components new design ([e675f1c](https://github.com/flowz0/dd-platform/commit/e675f1cee92548fbd14f8b493a27a2c2ce9b89b6))
+
 # [1.1.0](https://github.com/flowz0/dd-platform/compare/v1.0.1...v1.1.0) (2025-07-26)
 
 
