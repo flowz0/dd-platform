@@ -82,10 +82,4 @@ export const bottomRowReviews: Review[] = [
     message: "Finding good honest reliable contractors of any trade is a chore. I don't think you'll go wrong here!!!",
     avatar: JoeBlack
   },
-  {
-    id: 6, 
-    name: "Matt Scrogham",
-    message: "The Team at Duct Daddy was awesome! They went through each vent of the house and cleaned everything.",
-    avatar: MattScrogham
-  },
 ];

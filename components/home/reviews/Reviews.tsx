@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import ReviewCard from "./ReviewCard";
 import { bottomRowReviews, topRowReviews } from "@/data/reviews";
+import Button from "@/components/ui/Button";
 
 export default function ReviewsSection() {
   const sectionRef = useRef<HTMLElement | null>(null);
@@ -72,6 +73,10 @@ export default function ReviewsSection() {
             ))}
           </div>
         </div>
+      </div>
+
+      <div className="flex justify-center mt-12">
+        <Button variant="text">View all reviews</Button>
       </div>
     </section>
   );

@@ -8,6 +8,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import DuctDaddyBrand from "@/public/assets/duct-daddy-brand.png";
 import Button from "../ui/Button";
+import { FaPhoneAlt } from "react-icons/fa";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -83,12 +84,18 @@ export default function Navbar() {
           </div>
           <div className="flex items-center gap-x-4">
             <Link href="/">
-              <Button className="hidden lg:block" variant="secondary">
-                Call now
+              <Button 
+                Icon={FaPhoneAlt} 
+                size="sm" 
+                variant="secondary"
+                iconAlign
+                className="hidden lg:flex" 
+              >
+                Call us
               </Button>
             </Link>
             <Link href="/booking">
-              <Button className="hidden lg:block" variant="primary">
+              <Button size="sm" className="hidden lg:flex" variant="primary">
                 Book online
               </Button>
             </Link>

@@ -1,3 +1,6 @@
+import CTASection from "@/components/home/CTA";
+import FAQSection from "@/components/home/faqs/FAQs";
+import Footer from "@/components/home/Footer";
 import Navbar from "@/components/home/Navbar";
 
 export default function BlogLayout({
@@ -9,6 +12,9 @@ export default function BlogLayout({
     <div>
       <Navbar />
       {children}
+      <FAQSection />
+      <CTASection />
+      <Footer />
     </div>
   );
 }

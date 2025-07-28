@@ -9,7 +9,7 @@ export default function ServiceCard({
   return (
     <div className="bg-white90 py-8 px-8 rounded-lg">
       <div>
-        <Icon className="text-primary w-12 h-12" />
+        <Icon className="text-primary w-12 h-12 sm:w-16 sm:h-16" />
       </div>
       <h4 className="text-white10 text-h5 font-bold mt-8 sm:text-h4">
         {children}
@@ -17,7 +17,7 @@ export default function ServiceCard({
       <p className="text-white25 text-p mt-4">
         {desc}
       </p>
-      <Button variant="outlined" className="mt-8">
+      <Button size="sm" variant="outlined" className="mt-12">
         Read more
       </Button>
     </div>

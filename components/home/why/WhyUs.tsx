@@ -1,6 +1,6 @@
 import Image from "next/image";
 import WhyCard from "./WhyCard";
-import { LuUsers, LuBadgeCheck } from "react-icons/lu";
+import { LuUsers, LuShieldCheck, LuBadgeCheck, LuThumbsUp } from "react-icons/lu";
 import { FaStar } from "react-icons/fa";
 
 import GoogleLogo from "@/public/home/Google.png";
@@ -47,17 +47,17 @@ export default function WhyUsSection() {
 
         {/* Cards */}
         <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 gap-6 lg:mt-0">
-          <WhyCard Icon={LuUsers} desc="Trained professionals with years of experience.">
-            Expert Technicians
+          <WhyCard Icon={LuUsers} desc="Our skilled technicians bring expertise and attention to detail to every job.">
+            Expert technicians
           </WhyCard>
-          <WhyCard Icon={LuBadgeCheck} desc="Industry certifications and a proven track record.">
-            Certified & Trusted
+          <WhyCard Icon={LuShieldCheck} desc="Trusted by Kansas City homeowners for reliable, high-quality cleaning services.">
+            Trusted & Local
           </WhyCard>
-          <WhyCard Icon={LuBadgeCheck} desc="Industry certifications and a proven track record.">
-            Certified & Trusted
+          <WhyCard Icon={LuBadgeCheck} desc="Clear, upfront pricing with no hidden fees or surprise charges.">
+            Transparent pricing
           </WhyCard>
-          <WhyCard Icon={LuUsers} desc="Trained professionals with years of experience.">
-            Expert Technicians
+          <WhyCard Icon={LuThumbsUp} desc="We stand by our work—your satisfaction is 100% guaranteed.">
+            Satisfaction guaranteed
           </WhyCard>
         </div>
       </div>
