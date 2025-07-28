@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/flowz0/dd-platform/compare/v1.1.1...v1.1.2) (2025-07-28)
+
+
+### Bug Fixes
+
+* create NavbarDropdown component and implement into Navbar ([2d127dc](https://github.com/flowz0/dd-platform/commit/2d127dc1b47c8c0f3fc6593583028d127e6ecbd3))
+
 ## [1.1.1](https://github.com/flowz0/dd-platform/compare/v1.1.0...v1.1.1) (2025-07-28)
 
 
