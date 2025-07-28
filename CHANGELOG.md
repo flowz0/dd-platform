@@ -1,3 +1,11 @@
+## [1.1.4](https://github.com/flowz0/dd-platform/compare/v1.1.3...v1.1.4) (2025-07-28)
+
+
+### Bug Fixes
+
+* add dashboard button to blog in Navbar ([d16f805](https://github.com/flowz0/dd-platform/commit/d16f80542082aa2c3f18941961e51ec7a4ee6318))
+* update Navbar component imports ([0f8eba5](https://github.com/flowz0/dd-platform/commit/0f8eba5da6eb2a30ac48d84e64e53fae2c439133))
+
 ## [1.1.3](https://github.com/flowz0/dd-platform/compare/v1.1.2...v1.1.3) (2025-07-28)
 
 
