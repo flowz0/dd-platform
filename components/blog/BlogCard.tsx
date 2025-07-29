@@ -33,7 +33,7 @@ export default function BlogCard({ blog }: BlogCardProps) {
             {formatDate(blog.createdAt!)}
           </p>
         </div>
-        <h6 className="text-white10 text-h6 font-bold line-clamp-1 mt-2">
+        <h6 className="text-white10 text-h6 font-bold line-clamp-2 mt-2">
           {blog.title}
         </h6>
         <p className="text-white25 text-p line-clamp-3 mt-4">
