@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/flowz0/dd-platform/compare/v1.2.1...v1.2.2) (2025-07-29)
+
+
+### Bug Fixes
+
+* update Services and Service Area pathname startswith ([d5fb2f8](https://github.com/flowz0/dd-platform/commit/d5fb2f8f094fe04c3fbcd26bfb3aae8b448966e0))
+
 ## [1.2.1](https://github.com/flowz0/dd-platform/compare/v1.2.0...v1.2.1) (2025-07-29)
 
 
