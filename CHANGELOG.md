@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/flowz0/dd-platform/compare/v1.2.2...v1.2.3) (2025-07-29)
+
+
+### Bug Fixes
+
+* implement imbedded booking feature ([d5ea06a](https://github.com/flowz0/dd-platform/commit/d5ea06a1a712ee5c9aec32300aaa21fdffa1af05))
+
 ## [1.2.2](https://github.com/flowz0/dd-platform/compare/v1.2.1...v1.2.2) (2025-07-29)
 
 
