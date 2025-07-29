@@ -1,3 +1,14 @@
+## [1.2.4](https://github.com/flowz0/dd-platform/compare/v1.2.3...v1.2.4) (2025-07-29)
+
+
+### Bug Fixes
+
+* add disabled option to SidebarLink in DashboardNavbar and Sidebar components ([992b632](https://github.com/flowz0/dd-platform/commit/992b63215dfeaa10621d70d16889ca7bedb64935))
+* add line-clamp-2 to blog title in BlogCard component ([899eb57](https://github.com/flowz0/dd-platform/commit/899eb575363a7f97a5f91e5ba472aa79d5b05966))
+* add LoadingSpinner component to dashboard layout ([bc8bd9f](https://github.com/flowz0/dd-platform/commit/bc8bd9fdd8810b0664b92c6267cd0ba7d40dd214))
+* add margin top to LoadingSpinner component ([e766321](https://github.com/flowz0/dd-platform/commit/e7663212cfa9ddb1df03b8d08377b3ae90501e40))
+* update handleSubmit router push to "/manage-blog" in EditBlogForm ([406f952](https://github.com/flowz0/dd-platform/commit/406f9525cebe87a2071a9bdd257a98585e1e2aef))
+
 ## [1.2.3](https://github.com/flowz0/dd-platform/compare/v1.2.2...v1.2.3) (2025-07-29)
 
 
