@@ -1,6 +1,4 @@
-import BlogCard from "@/components/blog/BlogCard";
-import Button from "@/components/ui/Button";
-import { FaAngleDown } from "react-icons/fa";
+import AllBlogs from "@/components/blog/AllBlogs";
 
 export default function BlogsPage() {
   return (
@@ -20,14 +18,7 @@ export default function BlogsPage() {
           All blogs
         </h3>
 
-        <div className="grid grid-cols-1 gap-y-6 mt-4 sm:grid-cols-2 sm:gap-x-6 md:grid-cols-3">
-          <BlogCard />
-          <BlogCard />
-          <BlogCard />
-        </div>
-        <div className="flex justify-center mt-12">
-          <Button Icon={FaAngleDown} variant="text">Show more blogs</Button>
-        </div>
+        <AllBlogs />
       </div>
     </div>
   );

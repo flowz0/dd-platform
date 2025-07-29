@@ -13,7 +13,7 @@ export default function MissionSection() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 gap-y-6 mt-16 md:grid-cols-3 md:gap-x-6">
+      <div className="grid grid-cols-1 gap-y-6 mt-16 md:grid-cols-3 md:gap-x-20">
         <ValueCard 
           Icon={FaHandshake} 
           desc="We believe in honest, transparent service with no shortcuts or hidden surprises."

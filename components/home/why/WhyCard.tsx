@@ -6,7 +6,7 @@ export default function WhyCard({
   desc
 }: WhyCardProps) {
   return (
-    <div className="bg-white90 py-8 px-8 rounded-lg">
+    <div className="bg-white90 border border-white75 py-8 px-8 rounded-lg">
       <Icon className="text-primary w-8 h-8 sm:w-12 sm:h-12" />
       <h4 className="text-white10 text-h5 font-bold mt-8 sm:text-h4">
         {children}

@@ -12,12 +12,12 @@ export default function WhyUsSection() {
         <div className="flex flex-col justify-between">
           <div className="flex flex-col">
             <h2 className="text-white10 text-h3 font-bold sm:text-h2">
-              Why Choose
+              Why You Should
               <br />
-              Duct Daddy
+              Choose Us
             </h2>
-            <p className="text-white25 text-p mt-4 max-w-xl">
-              When it comes to air duct cleaning, dryer vent cleaning, and HVAC cleaning, Duct Daddy stands out as your trusted partner for cleaner, safer, and more efficient homes. With years of expertise and a commitment to excellence, we deliver results that prioritize your family&apos;s health and your system&apos;s performance.
+            <p className="text-white25 text-p mt-4 max-w-lg">
+              Duct Daddy stands out as your trusted partner for cleaner, safer, and more efficient homes. With years of expertise and a commitment to excellence, we deliver results that prioritize your family&apos;s health and your system&apos;s performance.
             </p>
           </div>
 
@@ -25,9 +25,9 @@ export default function WhyUsSection() {
             <Image
               src={GoogleLogo}
               alt="Google logo"
-              className="h-20 w-fit"
+              className="h-16 w-fit object-cover"
               priority={false}
-              quality={80}
+              quality={90}
               draggable={false}
             />
             <div>

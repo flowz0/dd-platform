@@ -1,14 +1,23 @@
 import Image from "next/image";
 import Button from "../ui/Button";
 import PlaceholderImg from "@/public/placeholder/1920x1080.svg";
+import { BlogProps } from "@/types/blog";
+import formatDate from "@/lib/formatDate";
+import Link from "next/link";
 
-export default function BlogCard() {
+interface BlogCardProps {
+  blog: BlogProps;
+}
+
+export default function BlogCard({ blog }: BlogCardProps) {
+  const url = `/blog/${blog._id}`
+
   return (
-    <div>
+    <div aria-labelledby={`blog-title-${blog._id}`}>
       <div>
         <Image
-          src={PlaceholderImg}
-          alt="Blog image"
+          src={blog.img || PlaceholderImg}
+          alt={`${blog.title} blog image`}
           height={1920}
           width={1080}
           className="w-full h-64 object-cover rounded-lg"
@@ -17,18 +26,24 @@ export default function BlogCard() {
           draggable={false}
         />
         <div className="flex items-center justify-between mt-2">
-          <p className="text-white25 text-small">Karson Kolle</p>
-          <p className="text-white25 text-small">July 18, 2025</p>
+          <p className="text-white25 text-small">
+            {blog.author}
+          </p>
+          <p className="text-white25 text-small">
+            {formatDate(blog.createdAt!)}
+          </p>
         </div>
         <h6 className="text-white10 text-h6 font-bold line-clamp-1 mt-2">
-          Importance of Dryer Vent Cleaning something
+          {blog.title}
         </h6>
         <p className="text-white25 text-p line-clamp-3 mt-4">
-          As Kansas City winters approach, dryer vent clogs become a bigger risk for fires and inefficiency. Learn why cleaning now prevents hazards, saves money, and keeps your home safe extra lines to test wrap helllo yessir
+          {blog.summary}
         </p>
-        <Button size="sm" variant="outlined" className="mt-6">
-          Read blog
-        </Button>
+        <Link href={url}>
+          <Button size="sm" variant="outlined" className="mt-6">
+            Read blog
+          </Button>
+        </Link>
       </div>
     </div>
   );

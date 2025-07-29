@@ -75,8 +75,8 @@ export default function ReviewsSection() {
         </div>
       </div>
 
-      <div className="flex justify-center mt-12">
-        <Button variant="text">View all reviews</Button>
+      <div className="flex justify-center mt-12 px-6">
+        <Button variant="text">Review Duct Daddy Duct Cleaning</Button>
       </div>
     </section>
   );

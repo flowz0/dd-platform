@@ -13,7 +13,7 @@ export default function ReviewCard({
   avatar
 }: ReviewCardProps) {
   return (
-    <div className="border border-black75 py-8 px-8 rounded-2xl w-[400px] cursor-default">
+    <div className="border border-white75 py-8 px-8 rounded-2xl w-[400px] cursor-default">
       <div className="bg-secondary text-white95 p-4 rounded-full w-fit">
         <FaQuoteLeft className="w-4 h-4" />
       </div>

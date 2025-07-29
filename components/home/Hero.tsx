@@ -29,8 +29,8 @@ export default function Hero() {
                 <br className="hidden sm:inline-block" />
                 Cleaning Experts
               </h1>
-              <Button variant="primary" className="mt-12">
-                Book online
+              <Button size="sm" variant="primary" className="mt-12">
+                Book Duct Cleaning Today
               </Button>
             </div>
 

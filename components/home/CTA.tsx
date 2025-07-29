@@ -5,7 +5,7 @@ import Button from "../ui/Button";
 export default function CTASection() {
   return (
     <div className="pt-48 max-w-7xl mx-auto md:px-6 md:pt-64">
-      <div className="bg-linear-to-r from-[#0080DB] to-[#0068B2] h-[640px] py-16 flex flex-col sm:rounded-2xl md:py-16 md:pl-16 md:flex-row md:items-center md:h-[400px]">
+      <div className="bg-linear-to-r from-[#0080DB] to-[#0068B2] h-[640px] py-16 flex flex-col sm:rounded-2xl md:py-16 md:pl-16 md:flex-row md:items-center md:h-[400px] md:shadow-[0_8px_64px_rgba(0,128,219,0.8)]">
         <div className="px-6 md:px-0 md:w-1/2">
           <h3 className="text-white95 text-h4 font-bold sm:text-h3">
             Breath Without Worries

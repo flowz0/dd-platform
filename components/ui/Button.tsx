@@ -13,10 +13,10 @@ const Button = ({
 }: ButtonProps) => {
   const baseStyle = "rounded-lg text-p cursor-pointer";
   const variantStyle = {
-    text: "text-primary hover:bg-primary/10",
-    primary: "bg-primary text-white95 hover:bg-[hsl(205,100%,35%)]",
-    secondary: "bg-secondary text-white95 hover:bg-[hsl(346,98%,42%)]",
-    outlined: "ring ring-primary/60 text-primary hover:ring-primary hover:bg-primary/5"
+    text: "bg-primary/10 text-primary hover:shadow-lg hover:shadow-primary/5",
+    primary: "bg-primary text-white95 hover:shadow-lg hover:shadow-primary/20",
+    secondary: "bg-secondary text-white95 hover:shadow-lg hover:shadow-secondary/10",
+    outlined: "text-white95 bg-white25 hover:shadow-lg hover:shadow-white75/20"
   }[variant];
   const sizeStyle = {
     normal: "py-4 px-8",
@@ -27,14 +27,18 @@ const Button = ({
     <button
       type={type}
       onClick={onClick}
-      className={`${baseStyle} ${variantStyle} ${sizeStyle} ${className} flex items-center gap-x-4 transition-colors duration-300 ease-in-out`}
+      className={`${baseStyle} ${variantStyle} ${sizeStyle} ${className} flex items-center gap-x-4 transition-all duration-300 delay-150 ease-in-out hover:-translate-y-1 active:-translate-y-0`}
     >
       {iconAlign && (
-        <Icon className="w-4 h-4" />
+        <div>
+          <Icon className="w-4 h-4" />
+        </div>
       )}
       {children}
       {!iconAlign && (
-        <Icon className="w-4 h-4" />
+        <div>
+          <Icon className="w-4 h-4" />
+        </div>
       )}
     </button>
   );

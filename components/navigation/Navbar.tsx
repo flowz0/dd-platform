@@ -41,14 +41,14 @@ export default function Navbar() {
 
   const Links = [
     { label: "About", href: "/about" },
-    { label: "Services", href: "/services" },
+    { label: "Services", href: "/service" },
     { label: "Service Area", href: "/service-area" },
     { label: "Blog", href: "/blog" },
   ];
   const serviceDropdown = [
-    { label: "Air Duct Cleaning", href: "/services/air-duct-cleaning" },
-    { label: "Dryer Vent Cleaning", href: "/services/dryer-vent-cleaning" },
-    { label: "HVAC Cleaning", href: "/services/hvac-cleaning" },
+    { label: "Air Duct Cleaning", href: "/service/air-duct-cleaning" },
+    { label: "Dryer Vent Cleaning", href: "/service/dryer-vent-cleaning" },
+    { label: "HVAC Cleaning", href: "/service/hvac-cleaning" },
   ];
   const serviceAreaDropdown = [
     { label: "Oak Grove", href: "/service-area/oak-grove" },
@@ -64,7 +64,7 @@ export default function Navbar() {
   ];
 
   return (
-    <header className={`h-[100px] w-full fixed z-30 transition-all duration-300 ease-in-out ${isOpen
+    <header className={`h-[100px] w-full fixed z-30 transition-all duration-100 ease-in-out ${isOpen
       ? "bg-white95"
       : isScrolled
         ? "bg-white95"
@@ -116,7 +116,7 @@ export default function Navbar() {
                   <Link
                     key={href}
                     href={href}
-                    className={`text-h6 font-bold ${pathname === href
+                    className={`text-h6 font-bold py-4 ${pathname === href
                       ? "text-primary"
                       : "text-white25 hover:text-white10"
                       }`}
@@ -130,7 +130,7 @@ export default function Navbar() {
           </div>
           <div>
             {pathname === "/blog" ? (
-              <Link href="/dashboard">
+              <Link href="/manage-blog">
                 <Button size="sm" className="hidden lg:flex" variant="primary">
                   Dashboard
                 </Button>

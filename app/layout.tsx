@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Arimo } from "next/font/google";
 import "./globals.css";
+import { Toaster } from "react-hot-toast";
 
 const arimo = Arimo({
   variable: "--font-arimo",
@@ -91,6 +92,7 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
+        <Toaster />
         <main>{children}</main>
       </body>
     </html>
