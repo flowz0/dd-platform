@@ -88,7 +88,7 @@ export default function Navbar() {
             <div className="hidden md:flex gap-x-8">
               {Links.map(({ label, href }) => {
                 if (label === "Services") {
-                  const isActive = pathname.startsWith("/service");
+                  const isActive = pathname.startsWith("/service/");
                   return (
                     <NavbarDropdown
                       key={label}
@@ -100,7 +100,7 @@ export default function Navbar() {
                 }
 
                 if (label === "Service Area") {
-                  const isActive = pathname.startsWith("/service-area");
+                  const isActive = pathname.startsWith("/service-area/");
                   return (
                     <NavbarDropdown
                       key={label}
