@@ -1,6 +1,7 @@
 import Button from "@/components/ui/Button";
 import Image from "next/image";
 import DuctDaddyVanImg from "@/public/assets/dd-vehicle.png";
+import Link from "next/link";
 
 interface ServiceHeroProps {
   service: string;
@@ -21,9 +22,11 @@ export default function ServiceHeroSection({ service, desc, cta }: ServiceHeroPr
         <p className="text-white25 text-p max-w-lg mt-4">
           {desc}
         </p>
-        <Button variant="primary" className="mt-8">
-          {cta}
-        </Button>
+        <Link href={"/booking"}>
+          <Button variant="primary" className="mt-8">
+            {cta}
+          </Button>
+        </Link>
       </div>
 
       <div>

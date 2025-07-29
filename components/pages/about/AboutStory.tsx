@@ -1,6 +1,7 @@
 import Image from "next/image";
 import AboutStoryImg from "@/public/about/aboutstory.jpg";
 import Button from "@/components/ui/Button";
+import Link from "next/link";
 
 export default function AboutStorySection() {
   return (
@@ -24,7 +25,9 @@ export default function AboutStorySection() {
           <p className="text-white25 text-p mt-4">
             Duct Daddy started as a family-owned business in Kansas City with one goal: to help our community breathe cleaner, healthier air. What began as a small local service has grown into a trusted name for professional duct and dryer vent cleaning across the metro. We take pride in serving our neighbors with honest, reliable work that improves air quality and safety in Kansas City homes and businesses.
           </p>
-          <Button variant="primary" className="mt-8">Contact Us Today</Button>
+          <Link href={"/booking"}>
+            <Button variant="primary" className="mt-8">Contact Us Today</Button>
+          </Link>
         </div>
       </div>
     </section>

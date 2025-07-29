@@ -1,6 +1,7 @@
 import Image from "next/image";
 import DuctDaddyVan from "@/public/assets/duct-daddy-vehicle.png";
 import Button from "../ui/Button";
+import Link from "next/link";
 
 export default function CTASection() {
   return (
@@ -14,7 +15,9 @@ export default function CTASection() {
             Enjoy cleaner air and a healthier home with expert duct cleaning from Kansas City&apos;s trusted pros. Schedule your service today and feel the difference in every breath.
           </p>
 
-          <Button variant="secondary" className="mt-8">Book online</Button>
+          <Link href={"/booking"}>
+            <Button variant="secondary" className="mt-8">Book online</Button>
+          </Link>
         </div>
 
         <div className="md:w-1/2 relative">

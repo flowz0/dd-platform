@@ -40,13 +40,13 @@ export default function Footer() {
               Services
             </h6>
             <div className="flex flex-col gap-y-2 mt-4">
-              <Link href="/air-duct-cleaning" className="text-black75 text-p w-fit font-inter transition-colors duration-300 ease-in-out hover:text-primary">
+              <Link href="/service/air-duct-cleaning" className="text-black75 text-p w-fit font-inter transition-colors duration-300 ease-in-out hover:text-primary">
                 Air Duct Cleaning
               </Link>
-              <Link href="/dryer-vent-cleaning" className="text-black75 text-p w-fit font-inter transition-colors duration-300 ease-in-out hover:text-primary">
+              <Link href="/service/dryer-vent-cleaning" className="text-black75 text-p w-fit font-inter transition-colors duration-300 ease-in-out hover:text-primary">
                 Dryer Vent Cleaning
               </Link>
-              <Link href="/hvac-cleaning" className="text-black75 text-p w-fit font-inter transition-colors duration-300 ease-in-out hover:text-primary">
+              <Link href="/service/hvac-cleaning" className="text-black75 text-p w-fit font-inter transition-colors duration-300 ease-in-out hover:text-primary">
                 HVAC Cleaning
               </Link>
             </div>
@@ -84,13 +84,13 @@ export default function Footer() {
               </p>
             </div>
             <div className="mt-12 flex gap-x-6">
-              <Link href="https://www.facebook.com/ductdaddykc/" className="transition-colors duration-300 ease-in-out hover:text-primary">
+              <Link href="https://www.facebook.com/ductdaddykc/" target="_blank" className="transition-colors duration-300 ease-in-out hover:text-primary">
                 <SiFacebook className="w-8 h-8" />
               </Link>
               <Link href="https://www.tiktok.com/@ductdaddykc" target="_blank" className="transition-colors duration-300 ease-in-out hover:text-primary">
                 <SiTiktok className="w-8 h-8" />
               </Link>
-              <Link href="https://www.google.com/maps/place/Duct+Daddy+Duct+Cleaning/@39.0293009,-94.121473,17z/data=!3m1!4b1!4m6!3m5!1s0x87c113eb4a122715:0xb52bc5120c0f274!8m2!3d39.0293009!4d-94.121473!16s%2Fg%2F11kqf72rlp?entry=ttu&g_ep=EgoyMDI1MDcyMy4wIKXMDSoASAFQAw%3D%3D" className="transition-colors duration-300 ease-in-out hover:text-primary">
+              <Link href="https://www.google.com/maps/place/Duct+Daddy+Duct+Cleaning/@39.0293009,-94.121473,17z/data=!3m1!4b1!4m6!3m5!1s0x87c113eb4a122715:0xb52bc5120c0f274!8m2!3d39.0293009!4d-94.121473!16s%2Fg%2F11kqf72rlp?entry=ttu&g_ep=EgoyMDI1MDcyMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" className="transition-colors duration-300 ease-in-out hover:text-primary">
                 <FaGoogle className="w-8 h-8" />
               </Link>
             </div>

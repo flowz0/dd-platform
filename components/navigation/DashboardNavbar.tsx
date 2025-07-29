@@ -94,7 +94,7 @@ export default function DashboardNavbar() {
               <SidebarLink
                 href="/dashboard"
                 label="Dashboard"
-                className="pointer-events-none"
+                className="cursor-not-allowed"
                 disabled
                 icon={
                   // Outline icon

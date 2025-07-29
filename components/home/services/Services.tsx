@@ -13,21 +13,21 @@ export default function ServicesSection() {
 
       <div className="mt-16 grid grid-cols-1 gap-y-6 lg:gap-x-6 lg:grid-cols-3">
         <ServiceCard
-        link="service/air-duct-cleaning"
+        link="/service/air-duct-cleaning"
           Icon={LuWind}
           desc="Clean vents, trunk lines, and furnace using powerful negative air machines and rotary brushes."
         >
           Air Duct Cleaning
         </ServiceCard>
         <ServiceCard
-        link="service/dryer-vent-cleaning"
+        link="/service/dryer-vent-cleaning"
           Icon={LuRotateCcw} 
           desc="Thorough lint and debris removal from your dryer vent to prevent fires, speed up drying, and reduce energy costs."
         >
           Dryer Vent Cleaning
         </ServiceCard>
         <ServiceCard
-        link="service/hvac-cleaning"
+        link="/service/hvac-cleaning"
           Icon={LuFan} 
           desc="Seasonal tune-ups to boost efficiency, extend HVAC lifespan, and prevent costly repairs."
         >

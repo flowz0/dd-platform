@@ -4,6 +4,7 @@ import Image from "next/image";
 import Button from "../ui/Button";
 import KansasCityImg from "@/public/assets/kansas-city.png";
 import DuctDaddyVanImg from "@/public/assets/duct-daddy-vehicle-shadow.png";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -29,9 +30,11 @@ export default function Hero() {
                 <br className="hidden sm:inline-block" />
                 Cleaning Experts
               </h1>
-              <Button size="sm" variant="primary" className="mt-12">
-                Book Duct Cleaning Today
-              </Button>
+              <Link href={"/booking"} className="mt-12">
+                <Button size="sm" variant="primary">
+                  Book Duct Cleaning Today
+                </Button>
+              </Link>
             </div>
 
             <Image
