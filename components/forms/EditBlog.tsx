@@ -158,7 +158,7 @@ export default function EditBlogForm({ initialData }: { initialData: BlogProps }
       });
       if (res.status === 201 || res.status === 200) {
         toast.success("Blog updated successfully!");
-        router.push("/dashboard");
+        router.push("/manage-blog");
       }
     } catch (error) {
       console.error("EditBlogForm handleSubmit:", error);
