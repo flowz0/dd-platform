@@ -111,7 +111,6 @@ export default function Navbar() {
                   );
                 }
 
-                // Default links (About, Blog, etc.)
                 return (
                   <Link
                     key={href}
@@ -211,6 +210,11 @@ export default function Navbar() {
                     </Link>
                   </li>
                 ))}
+                <li>
+                  <Link href={"/manage-blog"}>
+                    Dashboard
+                  </Link>
+                </li>
               </ul>
             </motion.div>
           )}

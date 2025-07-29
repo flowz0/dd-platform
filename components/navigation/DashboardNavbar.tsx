@@ -12,13 +12,14 @@ interface SidebarLinkProps {
   label: string;
   icon: ReactNode;
   activeIcon: ReactNode;
+  className?: string;
+  disabled?: boolean;
 }
-
 
 export default function DashboardNavbar() {
   const [isOpen, setIsOpen] = useState(false);
 
-  function SidebarLink({ href, label, icon, activeIcon }: SidebarLinkProps) {
+  function SidebarLink({ href, label, icon, activeIcon, className, disabled = false }: SidebarLinkProps) {
     const pathname = usePathname();
     const isActive = pathname.startsWith(href);
 
@@ -27,9 +28,20 @@ export default function DashboardNavbar() {
     const activeClass = isActive
       ? "bg-primary text-white95"
       : "text-white25 hover:bg-white75/40";
+    const combinedClass = `${baseClass} ${activeClass} ${className} ${disabled ? "opacity-50 cursor-not-allowed hover:bg-transparent" : ""
+      }`;
+
+    if (disabled) {
+      return (
+        <div className={combinedClass}>
+          <div>{isActive ? activeIcon : icon}</div>
+          {label}
+        </div>
+      );
+    }
 
     return (
-      <Link href={href} className={baseClass + activeClass} onClick={() => setIsOpen(!isOpen)}>
+      <Link href={href} className={combinedClass} onClick={() => setIsOpen(!isOpen)}>
         <div>{isActive ? activeIcon : icon}</div>
         {label}
       </Link>
@@ -79,9 +91,11 @@ export default function DashboardNavbar() {
               </p>
             </div>
             <div className="mt-12 flex flex-col gap-y-2 px-6">
-              {/* <SidebarLink
+              <SidebarLink
                 href="/dashboard"
                 label="Dashboard"
+                className="pointer-events-none"
+                disabled
                 icon={
                   // Outline icon
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
@@ -95,7 +109,7 @@ export default function DashboardNavbar() {
                     <path d="m12 5.432 8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 0-.75-.75h-3a.75.75 0 0 0-.75.75V21a.75.75 0 0 1-.75.75H5.625a1.875 1.875 0 0 1-1.875-1.875v-6.198a2.29 2.29 0 0 0 .091-.086L12 5.432Z" />
                   </svg>
                 }
-              /> */}
+              />
               <SidebarLink
                 href="/manage-blog"
                 label="Blog"
