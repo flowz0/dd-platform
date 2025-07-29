@@ -1,3 +1,10 @@
+## [1.2.5](https://github.com/flowz0/dd-platform/compare/v1.2.4...v1.2.5) (2025-07-29)
+
+
+### Bug Fixes
+
+* update links and buttons in components ([05f14d8](https://github.com/flowz0/dd-platform/commit/05f14d88749116bc2a358daa4b494e4346428626))
+
 ## [1.2.4](https://github.com/flowz0/dd-platform/compare/v1.2.3...v1.2.4) (2025-07-29)
 
 
