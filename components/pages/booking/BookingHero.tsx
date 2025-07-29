@@ -2,7 +2,11 @@ import Button from "@/components/ui/Button";
 import Image from "next/image";
 import DuctDaddyVanImg from "@/public/assets/dd-vehicle.png";
 
-export default function BookingHeroSection() {
+interface BookingHeroProps {
+  handleClick?: () => void;
+}
+
+export default function BookingHeroSection({handleClick}: BookingHeroProps) {
   return (
     <div className="pt-48 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 lg:items-center">
       <div className="px-6 lg:pr-0">
@@ -15,7 +19,13 @@ export default function BookingHeroSection() {
         <p className="text-white25 text-p max-w-lg mt-4">
           Schedule your air duct, dryer vent, or HVAC cleaning in minutes. Choose a time that works best for you and let our trusted Kansas City team handle the rest.
         </p>
-        <Button variant="primary" className="mt-8">Book HVAC Cleaning Today</Button>
+        <Button
+          onClick={handleClick}
+          variant="primary"
+          className="mt-8"
+        >
+          Book HVAC Cleaning Today
+        </Button>
       </div>
 
       <div>

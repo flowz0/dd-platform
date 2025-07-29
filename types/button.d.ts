@@ -9,4 +9,6 @@ export interface ButtonProps {
   size?: 'sm' | 'normal'
   iconAlign?: boolean;
   Icon?: ElementType;
+  dataToken?: string;
+  dataOrgname?: string;
 }

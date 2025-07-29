@@ -9,7 +9,9 @@ const Button = ({
   variant = 'text',
   size = 'normal',
   iconAlign,
-  Icon = FaArrowRight
+  Icon = FaArrowRight,
+  dataToken,
+  dataOrgname
 }: ButtonProps) => {
   const baseStyle = "rounded-lg text-p cursor-pointer";
   const variantStyle = {
@@ -27,6 +29,8 @@ const Button = ({
     <button
       type={type}
       onClick={onClick}
+      data-token={dataToken}
+      data-orgname={dataOrgname}
       className={`${baseStyle} ${variantStyle} ${sizeStyle} ${className} flex items-center gap-x-4 transition-all duration-300 delay-150 ease-in-out hover:-translate-y-1 active:-translate-y-0`}
     >
       {iconAlign && (
