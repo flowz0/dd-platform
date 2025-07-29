@@ -2,6 +2,7 @@
 
 import DashboardNavbar from "@/components/navigation/DashboardNavbar";
 import Sidebar from "@/components/navigation/Sidebar";
+import LoadingSpinner from "@/components/ui/LoadingSpinner";
 import useAuthUser from "@/hooks/useAuthUser";
 import { useRouter, usePathname } from "next/navigation";
 import { useEffect } from "react";
@@ -16,16 +17,14 @@ export default function DashboardLayout({
   const user = useAuthUser();
 
   useEffect(() => {
-    if (!user) return; // Wait for user to load
+    if (!user) return;
 
-    // If authenticated AND currently at /dashboard (or root of dashboard), redirect to /manage-blog
     if (pathname === "/dashboard") {
       router.push("/manage-blog");
     }
   }, [user, pathname, router]);
 
-  // While checking authentication, you might return a loader
-  if (user === null) return null;
+  if (user === null) return <LoadingSpinner />;
 
   return (
     <div className="flex h-screen bg-white95">
