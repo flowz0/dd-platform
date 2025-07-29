@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/flowz0/dd-platform/compare/v1.2.0...v1.2.1) (2025-07-29)
+
+
+### Bug Fixes
+
+* update isActive pathname startwith to "service" ([0fce7c0](https://github.com/flowz0/dd-platform/commit/0fce7c0b7235d3c05ae9d0b0195a4a5cc6e7c7c2))
+
 # [1.2.0](https://github.com/flowz0/dd-platform/compare/v1.1.6...v1.2.0) (2025-07-29)
 
 
