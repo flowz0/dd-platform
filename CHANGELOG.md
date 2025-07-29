@@ -1,3 +1,16 @@
+# [1.2.0](https://github.com/flowz0/dd-platform/compare/v1.1.6...v1.2.0) (2025-07-29)
+
+
+### Bug Fixes
+
+* create pill category for blogs page ([3adc377](https://github.com/flowz0/dd-platform/commit/3adc3778be88d829925b1ef06fec30123d389c7b))
+* npm install axios ([f455358](https://github.com/flowz0/dd-platform/commit/f4553580e95d9ec8c8bbb8cab0392e36793459a4))
+
+
+### Features
+
+* v1.2 release ([2ea929d](https://github.com/flowz0/dd-platform/commit/2ea929d4bd6d9139356291dcc74f051fe3179113))
+
 ## [1.1.6](https://github.com/flowz0/dd-platform/compare/v1.1.5...v1.1.6) (2025-07-28)
 
 
