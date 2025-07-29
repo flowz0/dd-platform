@@ -1,3 +1,11 @@
+## [1.1.6](https://github.com/flowz0/dd-platform/compare/v1.1.5...v1.1.6) (2025-07-28)
+
+
+### Bug Fixes
+
+* add AngleDown Icon to Blogs page show more blogs button ([ec4a19a](https://github.com/flowz0/dd-platform/commit/ec4a19a0bd92258ad2fb1f34876e5e6b10d29506))
+* improve BlogFeatures component spacing ([2803b6a](https://github.com/flowz0/dd-platform/commit/2803b6a19b854d6e3dad207d597d063f733b9cc1))
+
 ## [1.1.5](https://github.com/flowz0/dd-platform/compare/v1.1.4...v1.1.5) (2025-07-28)
 
 
