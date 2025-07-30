@@ -1,3 +1,11 @@
+## [1.2.9](https://github.com/flowz0/dd-platform/compare/v1.2.8...v1.2.9) (2025-07-30)
+
+
+### Bug Fixes
+
+* create mobileMenuStep for main, services, and areas ([8eaedb0](https://github.com/flowz0/dd-platform/commit/8eaedb07ee6f0d612660dc247c49ceaa887721b2))
+* improve responsive spacing ([da54460](https://github.com/flowz0/dd-platform/commit/da54460ec3615d01c172b50cb0b6d56b04fc3783))
+
 ## [1.2.8](https://github.com/flowz0/dd-platform/compare/v1.2.7...v1.2.8) (2025-07-30)
 
 
