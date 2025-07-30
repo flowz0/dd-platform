@@ -20,9 +20,9 @@ export default function BlogsPage() {
       </div>
 
       <div className="mt-32">
-        <h3 className="text-white10 text-h4 font-bold sm:text-h3">
+        <h4 className="text-white10 text-h5 font-bold sm:text-h4">
           All blogs
-        </h3>
+        </h4>
 
         <AllBlogs />
       </div>

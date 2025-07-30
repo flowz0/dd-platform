@@ -32,7 +32,7 @@ export default function Hero() {
               </h1>
               <Link href={"/booking"} className="mt-12">
                 <Button size="sm" variant="primary">
-                  Book Duct Cleaning Today
+                  Book Air Duct Cleaning Today
                 </Button>
               </Link>
             </div>

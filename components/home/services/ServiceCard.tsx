@@ -13,9 +13,9 @@ export default function ServiceCard({
       <div>
         <Icon className="text-primary w-12 h-12 sm:w-16 sm:h-16" />
       </div>
-      <h4 className="text-white10 text-h5 font-bold mt-8 sm:text-h4">
+      <h5 className="text-white10 text-h6 font-bold mt-8 sm:text-h5">
         {children}
-      </h4>
+      </h5>
       <p className="text-white25 text-p mt-4">
         {desc}
       </p>

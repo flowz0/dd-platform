@@ -11,9 +11,9 @@ export default function ValueCard({
         <div className="bg-primary p-3 rounded-lg w-fit">
           <Icon className="text-white95 h-6 w-6" />
         </div>
-        <h5 className="text-white10 text-h6 font-bold text-center mt-8 sm:text-h5">
+        <h6 className="text-white10 text-h6 font-bold text-center mt-8 sm:text-h5">
           {children}
-        </h5>
+        </h6>
         <p className="text-white25 text-p text-center mt-4">
           {desc}
         </p>

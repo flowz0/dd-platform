@@ -2,7 +2,7 @@ import AreaCard from "./AreaCard";
 
 export default function Areas() {
   return (
-    <div className="grid grid-cols-2 gap-y-6 gap-x-6 sm:grid-cols-3 mt-16">
+    <div className="grid grid-cols-2 gap-y-6 gap-x-6 sm:grid-cols-3 mt-8">
       <AreaCard>
         Oak Grove
       </AreaCard>

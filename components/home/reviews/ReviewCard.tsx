@@ -17,9 +17,9 @@ export default function ReviewCard({
       <div className="bg-secondary text-white95 p-4 rounded-full w-fit">
         <FaQuoteLeft className="w-4 h-4" />
       </div>
-      <p className="text-white10 text-p mt-8">
+      <h6 className="text-white10 text-p mt-8">
         {review}
-      </p>
+      </h6>
       <div className="mt-8 flex items-center gap-x-4">
         <Image
           src={avatar}
@@ -31,7 +31,7 @@ export default function ReviewCard({
           loading="lazy"
         />
         <div className="flex flex-col">
-          <h6 className="text-white10 text-p">{reviewer}</h6>
+          <p className="text-white25 text-small">{reviewer}</p>
           <div className="flex items-center gap-x-0.5">
             <FaStar className="text-amber-300 h-4 w-4" />
             <FaStar className="text-amber-300 h-4 w-4" />
