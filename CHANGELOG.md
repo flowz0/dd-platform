@@ -1,3 +1,10 @@
+## [1.2.7](https://github.com/flowz0/dd-platform/compare/v1.2.6...v1.2.7) (2025-07-30)
+
+
+### Bug Fixes
+
+* improve responsive font size ([457ae6b](https://github.com/flowz0/dd-platform/commit/457ae6b828d47aba11d7c8aed8b0a6fa3ccf5ed2))
+
 ## [1.2.6](https://github.com/flowz0/dd-platform/compare/v1.2.5...v1.2.6) (2025-07-30)
 
 
