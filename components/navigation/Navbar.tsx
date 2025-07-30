@@ -247,11 +247,13 @@ export default function Navbar() {
                         </li>
                       );
                     })}
-                    <li>
-                      <Link href={"/manage-blog"} onClick={() => setIsOpen(false)}>
-                        Dashboard
-                      </Link>
-                    </li>
+                    {pathname === "/blog" && (
+                      <li>
+                        <Link href={"/manage-blog"} onClick={() => setIsOpen(false)}>
+                          Dashboard
+                        </Link>
+                      </li>
+                    )}
                   </>
                 )}
 
