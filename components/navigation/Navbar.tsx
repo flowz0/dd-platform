@@ -141,7 +141,7 @@ export default function Navbar() {
               </Link>
             ) : (
               <div className="flex items-center gap-x-4">
-                <Link href="/">
+                <Link href="tel:+18167082608">
                   <Button
                     Icon={FaPhoneAlt}
                     size="sm"
