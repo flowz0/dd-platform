@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function AboutHeroSection() {
   return (
-    <div className="pt-48 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 lg:items-center">
+    <div className="pt-32 max-w-7xl mx-auto grid grid-cols-1 sm:pt-48 lg:grid-cols-2 lg:items-center">
       <div className="px-6 lg:pr-0">
         <p className="text-primary text-small">
           About Duct Daddy Duct Cleaning

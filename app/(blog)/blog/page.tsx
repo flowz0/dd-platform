@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function BlogsPage() {
   return (
-    <div className="pt-48 max-w-7xl px-6 mx-auto">
+    <div className="pt-32 max-w-7xl px-6 mx-auto sm:pt-48">
       <div className="flex flex-col items-center">
         <p className="bg-primary/20 text-primary text-p px-5 py-1 rounded-full text-center">Duct Daddy Duct Cleaning&apos;s Blog</p>
         <h1 className="text-white10 text-h2 font-bold text-center mt-4 sm:text-h1">
