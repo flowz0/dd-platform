@@ -10,11 +10,13 @@ import ServicesSection from "@/components/home/services/Services";
 import WhyUsSection from "@/components/home/why/WhyUs";
 import WaveDividerIn from "@/components/ui/WaveDividerIn";
 import WaveDividerOut from "@/components/ui/WaveDividerOut";
+import MobileCallBtn from "@/components/navigation/MobileCallBtn";
 
 export default function Page() {
   return (
     <div>
       <Navbar />
+      <MobileCallBtn />
       <Hero />
       <ServicesSection />
       <WhyUsSection />

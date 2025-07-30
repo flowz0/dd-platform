@@ -67,7 +67,7 @@ export default function Navbar() {
   ];
 
   return (
-    <header className={`h-[100px] w-full fixed z-30 transition-all duration-100 ease-in-out ${isOpen
+    <header className={`h-[100px] w-full fixed z-40 transition-all duration-100 ease-in-out ${isOpen
       ? "bg-white95"
       : isScrolled
         ? "bg-white95"
