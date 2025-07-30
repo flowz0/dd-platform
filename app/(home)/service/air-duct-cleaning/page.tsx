@@ -6,6 +6,12 @@ import WhyUsSection from "@/components/home/why/WhyUs";
 import ServiceAboutSection from "@/components/pages/services/ServiceAbout";
 import ServiceHeroSection from "@/components/pages/services/ServiceHero";
 import ServiceAboutImg from "@/public/service/air-duct-cleaning.webp";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Professional Air Duct Cleaning in Kansas City, Missouri",
+  description: "Improve your indoor air quality with professional air duct cleaning in Kansas City and surrounding areas. Duct Daddy removes dust, allergens, and debris from your home or business ducts for a healthier, cleaner space.",
+};
 
 export default function AirDuctCleaningPage() {
   return (

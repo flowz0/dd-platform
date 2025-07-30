@@ -94,6 +94,7 @@ export default function Navbar() {
                       key={label}
                       label="Services"
                       items={serviceDropdown}
+                      pathname={pathname}
                       className={isActive ? "text-primary" : "text-white25 hover:text-white10"}
                     />
                   );
@@ -106,6 +107,7 @@ export default function Navbar() {
                       key={label}
                       label="Service Area"
                       items={serviceAreaDropdown}
+                      pathname={pathname}
                       className={isActive ? "text-primary" : "text-white25 hover:text-white10"}
                     />
                   );

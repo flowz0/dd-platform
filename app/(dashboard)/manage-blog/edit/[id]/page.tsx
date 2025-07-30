@@ -3,6 +3,21 @@ import { getBlogById } from "@/lib/blogs";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
+type Props = {
+  params: Promise<{ id: string }>;
+}
+
+export async function generateMetadata({ params }: Props) {
+  const resolvedParams = await params;
+  const id = resolvedParams.id;
+  const blog = await getBlogById(id);
+
+  return {
+    title: `${blog?.title} - Duct Daddy Duct Cleaning`,
+    description: blog?.summary,
+  }
+}
+
 export default async function EditBlogPage({ params }: { params: Promise<{ id: string }> }) {
   const resolvedParams = await params;
   const id = resolvedParams.id;

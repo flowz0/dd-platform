@@ -6,6 +6,12 @@ import WhyUsSection from "@/components/home/why/WhyUs";
 import ServiceAboutSection from "@/components/pages/services/ServiceAbout";
 import ServiceHeroSection from "@/components/pages/services/ServiceHero";
 import ServiceAboutImg from "@/public/about/aboutstory.jpg";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Professional Dryer Vent Cleaning in Kansas City, Missouri",
+  description: "Protect your home from fire hazards with expert dryer vent cleaning in Kansas City, MO. Duct Daddy provides thorough vent cleaning to improve dryer efficiency and safety for residential and commercial properties.",
+};
 
 export default function DryerVentCleaningPage() {
   return (

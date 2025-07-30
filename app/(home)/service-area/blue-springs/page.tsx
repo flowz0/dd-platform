@@ -5,6 +5,12 @@ import ServiceAreaSection from "@/components/home/service-area/ServiceArea";
 import ServicesSection from "@/components/home/services/Services";
 import WhyUsSection from "@/components/home/why/WhyUs";
 import ServiceHeroSection from "@/components/pages/services/ServiceHero";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Air Duct Cleaning in Blue Springs, Missouri",
+  description: "Professional HVAC duct cleaning services in Blue Springs and surrounding areas. Duct Daddy helps improve air quality, safety, and efficiency for homes and businesses. Book your cleaning today!",
+};
 
 export default function BlueSpringsPage() {
   return (

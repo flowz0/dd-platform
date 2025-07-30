@@ -6,6 +6,12 @@ import WhyUsSection from "@/components/home/why/WhyUs";
 import ServiceAboutSection from "@/components/pages/services/ServiceAbout";
 import ServiceHeroSection from "@/components/pages/services/ServiceHero";
 import ServiceAboutImg from "@/public/about/aboutstory.jpg";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Professional HVAC Cleaning in Kansas City, Missouri",
+  description: "Extend the life of your HVAC system with Duct Daddy's professional HVAC cleaning services in Kansas City and nearby areas. We clean coils, vents, and systems to boost efficiency and indoor air quality.",
+};
 
 export default function HVACCleaningPage() {
   return (

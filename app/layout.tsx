@@ -14,6 +14,17 @@ export const metadata: Metadata = {
     default: "Kansas City's Trusted Air Duct & Dryer Vent Cleaning Experts | Duct Daddy Duct Cleaning",
     template: "%s | Duct Daddy Duct Cleaning"
   },
+  keywords: [
+    "Kansas City HVAC cleaning", 
+    "Air duct cleaning Kansas City MO",
+    "Duct cleaning Kansas City Missouri",
+    "Dryer vent cleaning Kansas City",
+    "Professional duct cleaning Kansas City",
+    "HVAC duct cleaning Kansas City",
+    "AC vent cleaning Kansas City",
+    "Residential duct cleaning Kansas City",
+    "Commercial duct cleaning Kansas City",
+  ],
   description: "Looking for trusted air duct cleaning or dryer vent services near you? Duct Daddy proudly serves homeowners and businesses across the KC metro.",
   openGraph: {
     title: "Kansas City's Trusted Air Duct & Dryer Vent Cleaning Experts | Duct Daddy Duct Cleaning",

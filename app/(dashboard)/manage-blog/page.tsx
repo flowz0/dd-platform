@@ -1,6 +1,12 @@
 import BlogCards from "@/components/dashboard/BlogCards";
 import BlogTable from "@/components/dashboard/BlogTable";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Dashboard",
+  description: "Manage your Duct Daddy website from the dashboard. Create and edit blog posts, monitor content, and streamline updates from one secure panel.",
+};
 
 export default function ManageBlogPage() {
   return (

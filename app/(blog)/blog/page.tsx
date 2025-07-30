@@ -1,4 +1,10 @@
 import AllBlogs from "@/components/blog/AllBlogs";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Duct Cleaning Tips & HVAC Advice - Blog",
+  description: "Stay informed with expert tips on air duct cleaning, dryer vent maintenance, and HVAC care. The Duct Daddy Blog helps Kansas City homeowners breathe cleaner, safer air year-round.",
+};
 
 export default function BlogsPage() {
   return (
