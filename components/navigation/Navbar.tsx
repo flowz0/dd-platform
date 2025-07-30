@@ -10,12 +10,15 @@ import DuctDaddyBrand from "@/public/assets/duct-daddy-brand.png";
 import Button from "../ui/Button";
 import { FaPhoneAlt } from "react-icons/fa";
 import NavbarDropdown from "./NavbarDropdown";
+import { FaAngleRight, FaArrowLeft } from "react-icons/fa";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const scrollThreshold = 0;
   const pathname = usePathname();
+  const [mobileMenuStep, setMobileMenuStep] = useState<"main" | "services" | "areas">("main");
+
 
   useEffect(() => {
     if (isOpen) {
@@ -198,25 +201,109 @@ export default function Navbar() {
               className="md:hidden bg-white95"
             >
               <ul className="flex flex-col gap-y-4 px-6 text-h5 font-bold pt-4">
-                {Links.map((link) => (
-                  <li key={link.href}>
-                    <Link
-                      href={link.href}
-                      className={`${pathname === link.href
-                        ? "text-primary"
-                        : "text-white10 hover:text-white5"
-                        }`}
-                      onClick={() => setIsOpen(!isOpen)}
-                    >
-                      {link.label}
-                    </Link>
-                  </li>
-                ))}
-                <li>
-                  <Link href={"/manage-blog"}>
-                    Dashboard
-                  </Link>
-                </li>
+                {mobileMenuStep === "main" && (
+                  <>
+                    {Links.map((link) => {
+                      if (link.label === "Services") {
+                        return (
+                          <li key={link.label}>
+                            <button
+                              onClick={() => setMobileMenuStep("services")}
+                              className="text-left flex items-center gap-x-2 text-white10 hover:text-white5"
+                            >
+                              {link.label}
+                              <FaAngleRight className="w-6 h-6" />
+                            </button>
+                          </li>
+                        );
+                      }
+
+                      if (link.label === "Service Area") {
+                        return (
+                          <li key={link.label}>
+                            <button
+                              onClick={() => setMobileMenuStep("areas")}
+                              className="text-left flex items-center gap-x-2 text-white10 hover:text-white5"
+                            >
+                              {link.label}
+                              <FaAngleRight className="w-6 h-6" />
+                            </button>
+                          </li>
+                        );
+                      }
+
+                      return (
+                        <li key={link.href}>
+                          <Link
+                            href={link.href}
+                            className={`${pathname === link.href
+                              ? "text-primary"
+                              : "text-white10 hover:text-white5"
+                              }`}
+                            onClick={() => setIsOpen(false)}
+                          >
+                            {link.label}
+                          </Link>
+                        </li>
+                      );
+                    })}
+                    <li>
+                      <Link href={"/manage-blog"} onClick={() => setIsOpen(false)}>
+                        Dashboard
+                      </Link>
+                    </li>
+                  </>
+                )}
+
+                {mobileMenuStep === "services" && (
+                  <>
+                    <li>
+                      <button
+                        onClick={() => setMobileMenuStep("main")}
+                        className="text-left flex items-center gap-x-2 text-white10 hover:text-white5"
+                      >
+                        <FaArrowLeft className="w-6 h-6" />
+                        Back
+                      </button>
+                    </li>
+                    {serviceDropdown.map((item) => (
+                      <li key={item.href}>
+                        <Link
+                          href={item.href}
+                          onClick={() => setIsOpen(false)}
+                          className="text-white10 hover:text-white5"
+                        >
+                          {item.label}
+                        </Link>
+                      </li>
+                    ))}
+                  </>
+                )}
+
+                {mobileMenuStep === "areas" && (
+                  <>
+                    <li>
+                      <button
+                        onClick={() => setMobileMenuStep("main")}
+                        className="text-left flex items-center gap-x-2 text-white10 hover:text-white5"
+                      >
+                        <FaArrowLeft className="w-6 h-6" />
+                        Back
+                      </button>
+                    </li>
+                    {serviceAreaDropdown.map((item) => (
+                      <li key={item.href}>
+                        <Link
+                          href={item.href}
+                          onClick={() => setIsOpen(false)}
+                          className="text-white10 hover:text-white5"
+                        >
+                          {item.label}
+                        </Link>
+                      </li>
+                    ))}
+                  </>
+                )}
               </ul>
             </motion.div>
           )}
