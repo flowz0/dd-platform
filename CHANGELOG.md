@@ -1,3 +1,10 @@
+## [1.2.12](https://github.com/flowz0/dd-platform/compare/v1.2.11...v1.2.12) (2025-07-30)
+
+
+### Bug Fixes
+
+* only show dashboard mobile link on blog route in Navbar ([c9c07ea](https://github.com/flowz0/dd-platform/commit/c9c07eaf438e00377c9d0f4d24d5979f2c20f4a0))
+
 ## [1.2.11](https://github.com/flowz0/dd-platform/compare/v1.2.10...v1.2.11) (2025-07-30)
 
 
