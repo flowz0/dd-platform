@@ -1,3 +1,10 @@
+## [1.2.6](https://github.com/flowz0/dd-platform/compare/v1.2.5...v1.2.6) (2025-07-30)
+
+
+### Bug Fixes
+
+* update pages and layouts SEO metadata ([ae983bc](https://github.com/flowz0/dd-platform/commit/ae983bc907a998c4b572094ef73ea818ad07b7b2))
+
 ## [1.2.5](https://github.com/flowz0/dd-platform/compare/v1.2.4...v1.2.5) (2025-07-29)
 
 
