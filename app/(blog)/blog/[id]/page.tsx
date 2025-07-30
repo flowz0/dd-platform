@@ -28,7 +28,7 @@ export default async function Blog({ params }: Props) {
   if (!blog) return notFound();
 
   return (
-    <div className="pt-48 max-w-7xl px-6 mx-auto">
+    <div className="pt-32 max-w-7xl px-6 mx-auto sm:pt-48">
       <div className="flex flex-col items-center">
         <h1 className="text-white10 text-h3 font-bold text-center sm:text-h1">
           {blog.title}
