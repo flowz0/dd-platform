@@ -1,3 +1,10 @@
+## [1.2.8](https://github.com/flowz0/dd-platform/compare/v1.2.7...v1.2.8) (2025-07-30)
+
+
+### Bug Fixes
+
+* improve responsive spacing ([ef8c73c](https://github.com/flowz0/dd-platform/commit/ef8c73c7ccef070a5e01b49a4d2535f2666e478b))
+
 ## [1.2.7](https://github.com/flowz0/dd-platform/compare/v1.2.6...v1.2.7) (2025-07-30)
 
 
