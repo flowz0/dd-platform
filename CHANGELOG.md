@@ -1,3 +1,10 @@
+## [1.2.10](https://github.com/flowz0/dd-platform/compare/v1.2.9...v1.2.10) (2025-07-30)
+
+
+### Bug Fixes
+
+* add Link to ServiceArea location component ([198b42e](https://github.com/flowz0/dd-platform/commit/198b42eb571f9b81e3e8f9a6290e520aa09fdaa9))
+
 ## [1.2.9](https://github.com/flowz0/dd-platform/compare/v1.2.8...v1.2.9) (2025-07-30)
 
 
