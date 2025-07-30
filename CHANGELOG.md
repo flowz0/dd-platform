@@ -1,3 +1,10 @@
+## [1.2.11](https://github.com/flowz0/dd-platform/compare/v1.2.10...v1.2.11) (2025-07-30)
+
+
+### Bug Fixes
+
+* add phone number to Call us button in Navbar component ([d85337e](https://github.com/flowz0/dd-platform/commit/d85337e85b53b99a219b0a85d08be7c67a259296))
+
 ## [1.2.10](https://github.com/flowz0/dd-platform/compare/v1.2.9...v1.2.10) (2025-07-30)
 
 
