@@ -1,3 +1,10 @@
+## [1.2.16](https://github.com/flowz0/dd-platform/compare/v1.2.15...v1.2.16) (2025-07-31)
+
+
+### Bug Fixes
+
+* decrease header margin top in WhyCard component ([8186846](https://github.com/flowz0/dd-platform/commit/8186846f6c781e12dd03b73e86b0cf0973fcbc98))
+
 ## [1.2.15](https://github.com/flowz0/dd-platform/compare/v1.2.14...v1.2.15) (2025-07-31)
 
 
