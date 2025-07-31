@@ -1,3 +1,15 @@
+## [1.2.20](https://github.com/flowz0/dd-platform/compare/v1.2.19...v1.2.20) (2025-07-31)
+
+
+### Bug Fixes
+
+* add hover text color to NavbarDropdown component ([6c9bbc3](https://github.com/flowz0/dd-platform/commit/6c9bbc3bba6816b8a37821952361296fca3dc230))
+* add Link and Icon to Review Button in Reviews component ([ab90194](https://github.com/flowz0/dd-platform/commit/ab901940207d5a3f74862938e693fab6fa7dc2b1))
+* add max width to paragraph in BeforeAfter component ([0a97ec4](https://github.com/flowz0/dd-platform/commit/0a97ec4a59171cce42bd1a1f6aa8d5b3703f7453))
+* increase max width for paragraph in Services component ([160b08c](https://github.com/flowz0/dd-platform/commit/160b08cef83bac82384ff552c100d123f5b82c6c))
+* move Footer component into navigation components, update imports, and set Image link width to fit ([8c71409](https://github.com/flowz0/dd-platform/commit/8c71409ce22ccdab07ac2b96ebe653e74f968c0c))
+* remove hover shadow in Button component ([d310ad6](https://github.com/flowz0/dd-platform/commit/d310ad619a0115e8e32298615a2994a3529c2bd5))
+
 ## [1.2.19](https://github.com/flowz0/dd-platform/compare/v1.2.18...v1.2.19) (2025-07-31)
 
 
