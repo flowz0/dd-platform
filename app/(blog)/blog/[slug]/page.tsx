@@ -1,6 +1,6 @@
-import BlogFeatures from "@/components/blog/BlogFeatures";
+import BlogFeatures from "@/components/(blog)/BlogFeatures";
 import Image from "next/image";
-import BlogSection from "@/components/blog/BlogSection";
+import BlogSection from "@/components/(blog)/BlogSection";
 import { getBlogById } from "@/lib/blogs";
 import { notFound, redirect } from "next/navigation";
 import { slugify } from "@/lib/slugify";

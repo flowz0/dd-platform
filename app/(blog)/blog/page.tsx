@@ -1,4 +1,4 @@
-import AllBlogs from "@/components/blog/AllBlogs";
+import AllBlogs from "@/components/(blog)/AllBlogs";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

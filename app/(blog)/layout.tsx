@@ -1,5 +1,5 @@
-import CTASection from "@/components/home/CTA";
-import FAQSection from "@/components/home/faqs/FAQs";
+import CTASection from "@/components/(home)/CTA";
+import FAQSection from "@/components/(home)/faqs/FAQs";
 import Footer from "@/components/navigation/Footer";
 import Navbar from "@/components/navigation/Navbar";
 

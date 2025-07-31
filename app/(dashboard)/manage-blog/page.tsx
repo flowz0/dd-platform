@@ -1,7 +1,7 @@
-import BlogCards from "@/components/dashboard/BlogCards";
-import BlogTable from "@/components/dashboard/BlogTable";
 import Link from "next/link";
 import { Metadata } from "next";
+import BlogTable from "@/components/pages/(dashboard)/BlogTable";
+import BlogCards from "@/components/pages/(dashboard)/BlogCards";
 
 export const metadata: Metadata = {
   title: "Dashboard",
