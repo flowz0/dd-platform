@@ -73,22 +73,22 @@ export default function DeleteBlogModal({
         tabIndex={-1}
       >
         {title && (
-          <h1 id="modal-title" className="text-[#333333] text-lg font-semibold md:text-xl">
+          <h1 id="modal-title" className="text-white10 text-h5 font-bold sm:text-h6">
             {title}
           </h1>
         )}
-        <div className="mt-2 text-[#333333]">{children}</div>
+        <div className="mt-2 text-white25 text-p">{children}</div>
         <div className="mt-4 flex gap-x-2">
           <button
             onClick={handleDelete}
             aria-label={`Delete ${ariaLabel}`}
-            className="bg-[hsl(0,100%,20%)] text-[hsl(0,100%,80%)] rounded-md px-4 py-2 font-semibold cursor-pointer md:px-5 md:py-3 hover:bg-[hsl(0,100%,28%)]"
+            className="bg-[hsl(0,100%,20%)] text-[hsl(0,100%,80%)] text-p rounded-lg cursor-pointer py-3 px-6 hover:bg-[hsl(0,100%,28%)]"
           >
             Delete blog
           </button>
           <button
             onClick={onClose}
-            className="bg-[hsl(205,100%,20%)] text-[hsl(205,100%,80%)] rounded-md px-4 py-2 font-semibold cursor-pointer md:px-5 md:py-3 hover:bg-[hsl(205,100%,28%)]"
+            className="bg-[hsl(205,100%,20%)] text-[hsl(205,100%,80%)] text-p rounded-lg cursor-pointer py-3 px-6 hover:bg-[hsl(205,100%,28%)]"
             aria-label="Close modal"
           >
             Cancel
