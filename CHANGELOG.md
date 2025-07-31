@@ -1,3 +1,10 @@
+## [1.2.13](https://github.com/flowz0/dd-platform/compare/v1.2.12...v1.2.13) (2025-07-30)
+
+
+### Bug Fixes
+
+* create MobileCallBtn component ([c900511](https://github.com/flowz0/dd-platform/commit/c900511e5864c2d001359b016112770702ae60e1))
+
 ## [1.2.12](https://github.com/flowz0/dd-platform/compare/v1.2.11...v1.2.12) (2025-07-30)
 
 
