@@ -33,7 +33,7 @@ export default function NavbarDropdown({
     >
       {/* Parent link styling is passed down from Navbar */}
       <button
-        className={`text-p font-bold py-4 cursor-pointer transition-colors flex items-center gap-x-2 ${className}`}
+        className={`text-p font-bold py-4 cursor-pointer transition-colors flex items-center gap-x-2 group-hover:text-white10 ${className}`}
       >
         {label}
         <FaAngleDown className={`${isOpen ? "rotate-90" : ""} transition-transform duration-500 ease-in-out w-4 h-4`} />
