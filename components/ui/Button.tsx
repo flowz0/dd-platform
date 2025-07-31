@@ -15,10 +15,10 @@ const Button = ({
 }: ButtonProps) => {
   const baseStyle = "rounded-lg text-p cursor-pointer";
   const variantStyle = {
-    text: "bg-primary/10 text-primary hover:shadow-lg hover:shadow-primary/5",
-    primary: "bg-primary text-white95 hover:shadow-lg hover:shadow-primary/20",
-    secondary: "bg-secondary text-white95 hover:shadow-lg hover:shadow-secondary/10",
-    outlined: "text-white95 bg-white25 hover:shadow-lg hover:shadow-white75/20"
+    text: "bg-primary/10 text-primary",
+    primary: "bg-primary text-white95",
+    secondary: "bg-secondary text-white95",
+    outlined: "text-white95 bg-white25"
   }[variant];
   const sizeStyle = {
     normal: "py-4 px-8",
