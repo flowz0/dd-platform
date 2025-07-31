@@ -25,7 +25,7 @@ export default function BeforeAfterSection() {
             <h2 className="text-white10 text-h3 font-bold text-center sm:text-h2">
               See The Duct Daddy Difference
             </h2>
-            <p className="text-white25 text-p text-center mt-4">
+            <p className="text-white25 text-p text-center max-w-lg mt-4">
               Real photos from homes serviced in Oak Grove and all across Kansas City, Missouri.
             </p>
           </div>
