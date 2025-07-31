@@ -1,30 +1,43 @@
 import EditBlogForm from "@/components/forms/EditBlog";
 import { getBlogById } from "@/lib/blogs";
+import { extractIdFromSlug } from "@/lib/extractidFromSlug";
+import { slugify } from "@/lib/slugify";
 import Link from "next/link";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 
-type Props = {
-  params: Promise<{ id: string }>;
-}
-
-export async function generateMetadata({ params }: Props) {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
   const resolvedParams = await params;
-  const id = resolvedParams.id;
+  const id = extractIdFromSlug(resolvedParams.slug);
   const blog = await getBlogById(id);
 
   return {
-    title: `${blog?.title} - Duct Daddy Duct Cleaning`,
+    title: `Edit blog: ${blog?.title}`,
     description: blog?.summary,
-  }
+  };
 }
 
-export default async function EditBlogPage({ params }: { params: Promise<{ id: string }> }) {
+export default async function EditBlogPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
   const resolvedParams = await params;
-  const id = resolvedParams.id;
+  const { slug } = resolvedParams;
+  const id = extractIdFromSlug(slug);
 
   const blog = await getBlogById(id);
-
   if (!blog) return notFound();
+
+  // Enforce correct slug for SEO
+  const correctSlug = `${slugify(blog.title)}-${blog._id}`;
+  if (slug !== correctSlug) {
+    redirect(`/blog/${correctSlug}`);
+  }
+
   return (
     <div className="py-20 px-6 lg:py-12">
       <div className="flex items-center justify-between w-full md:w-[680px]">

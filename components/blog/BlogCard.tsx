@@ -4,13 +4,15 @@ import PlaceholderImg from "@/public/placeholder/1920x1080.svg";
 import { BlogProps } from "@/types/blog";
 import formatDate from "@/lib/formatDate";
 import Link from "next/link";
+import { slugify } from "@/lib/slugify";
 
 interface BlogCardProps {
   blog: BlogProps;
 }
 
 export default function BlogCard({ blog }: BlogCardProps) {
-  const url = `/blog/${blog._id}`
+  const slug = slugify(blog.title);
+  const url = `/blog/${slug}-${blog._id}`;
 
   return (
     <div aria-labelledby={`blog-title-${blog._id}`}>

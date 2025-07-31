@@ -2,35 +2,47 @@ import BlogFeatures from "@/components/blog/BlogFeatures";
 import Image from "next/image";
 import BlogSection from "@/components/blog/BlogSection";
 import { getBlogById } from "@/lib/blogs";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
+import { slugify } from "@/lib/slugify";
+import { extractIdFromSlug } from "@/lib/extractidFromSlug";
 
-type Props = {
-  params: Promise<{ id: string }>;
-}
-
-export async function generateMetadata({ params }: Props) {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
   const resolvedParams = await params;
-  const id = resolvedParams.id;
+  const id = extractIdFromSlug(resolvedParams.slug);
   const blog = await getBlogById(id);
 
   return {
-    title: `${blog?.title} - Duct Daddy Duct Cleaning`,
+    title: `${blog?.title} - Blog`,
     description: blog?.summary,
-  }
+  };
 }
 
-export default async function Blog({ params }: Props) {
+export default async function Blog({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
   const resolvedParams = await params;
-  const id = resolvedParams.id;
+  const { slug } = resolvedParams;
+  const id = extractIdFromSlug(slug);
 
   const blog = await getBlogById(id);
-
   if (!blog) return notFound();
+
+  // Enforce correct slug for SEO
+  const correctSlug = `${slugify(blog.title)}-${blog._id}`;
+  if (slug !== correctSlug) {
+    redirect(`/blog/${correctSlug}`);
+  }
 
   return (
     <div className="pt-32 max-w-7xl px-6 mx-auto sm:pt-48">
       <div className="flex flex-col items-center">
-        <h1 className="text-white10 text-h3 font-bold text-center sm:text-h1">
+        <h1 className="text-white10 text-h3 font-bold text-center max-w-5xl sm:text-h1">
           {blog.title}
         </h1>
         <BlogFeatures

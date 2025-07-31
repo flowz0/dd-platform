@@ -8,9 +8,9 @@ import formatDate from "@/lib/formatDate";
 import Link from "next/link";
 import DeleteBlogBtn from "./DeleteBlogBtn";
 import axios from "axios";
+import { slugify } from "@/lib/slugify";
 
 export default function BlogTable() {
-  
   const [blogs, setBlogs] = useState<BlogProps[]>([]);
   const [loading, setLoading] = useState(true);
   const router = useRouter();
@@ -60,12 +60,14 @@ export default function BlogTable() {
         <tbody>
           {blogs.length > 0 ? (
             blogs.map((blog) => {
-              const id = `${blog._id}`;
+              const slug = `${slugify(blog.title)}-${blog._id}`;
               return (
                 <tr key={blog._id} className="even:bg-white90/40 even:text-white25 odd:bg-white75/40 odd:text-white10">
-                  <td className="py-4 px-6 font-p truncate max-w-0">
-                    {blog.title}
-                  </td>
+                  <Link href={`/blog/${slug}`} className="truncate max-w-0">
+                    <td className="py-4 px-6 font-p">
+                      {blog.title}
+                    </td>
+                  </Link>
                   <td className="py-4 px-6 font-p truncate max-w-0">
                     {blog.summary}
                   </td>
@@ -74,15 +76,14 @@ export default function BlogTable() {
                   </td>
                   <td className="py-4 px-6 font-p">
                     <div className="space-x-4">
-                      <Link href={`/manage-blog/edit/${id}`} className="hover:text-primary">
+                      <Link href={`/manage-blog/edit/${slug}`} className="hover:text-primary">
                         <button className="cursor-pointer">
                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
                             <path strokeLinecap="round" strokeLinejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L6.832 19.82a4.5 4.5 0 0 1-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 0 1 1.13-1.897L16.863 4.487Zm0 0L19.5 7.125" />
                           </svg>
                         </button>
                       </Link>
-                      
-                      <DeleteBlogBtn deleteHref={id} ariaLabel={blog.title} refetchBlogs={refetchBlogs} />
+                      <DeleteBlogBtn deleteHref={slug} ariaLabel={blog.title} refetchBlogs={refetchBlogs} />
                     </div>
                   </td>
                 </tr>
