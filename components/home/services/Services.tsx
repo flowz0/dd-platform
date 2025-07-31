@@ -7,7 +7,7 @@ export default function ServicesSection() {
       <h2 className="text-white10 text-h3 font-bold sm:text-h2">
         Our Services
       </h2>
-      <p className="text-white25 text-p mt-4 max-w-lg">
+      <p className="text-white25 text-p mt-4 max-w-3xl">
         Discover top-tier air duct cleaning, dryer vent cleaning, and HVAC cleaning services from Duct Daddy, your trusted experts in maintaining clean, efficient, and safe home systems.
       </p>
 
