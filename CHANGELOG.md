@@ -1,3 +1,12 @@
+## [1.2.17](https://github.com/flowz0/dd-platform/compare/v1.2.16...v1.2.17) (2025-07-31)
+
+
+### Bug Fixes
+
+* add blog link to title in DashboardBlogCard component ([092462c](https://github.com/flowz0/dd-platform/commit/092462c3ef4d442f5dc4fb36ee5452ea329ef272))
+* hydration error and add blog link to blog title in BlogTable component ([4421b46](https://github.com/flowz0/dd-platform/commit/4421b46d28d2f621eb1455ef1bfa49f01a1ba25b))
+* update Toaster bg color in app layout ([067b8b9](https://github.com/flowz0/dd-platform/commit/067b8b9632590fafcfe414867a44a8e280497339))
+
 ## [1.2.16](https://github.com/flowz0/dd-platform/compare/v1.2.15...v1.2.16) (2025-07-31)
 
 
