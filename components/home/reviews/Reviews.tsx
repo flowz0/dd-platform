@@ -4,6 +4,8 @@ import { useEffect, useRef, useState } from "react";
 import ReviewCard from "./ReviewCard";
 import { bottomRowReviews, topRowReviews } from "@/data/reviews";
 import Button from "@/components/ui/Button";
+import Link from "next/link";
+import { FaStar } from "react-icons/fa";
 
 export default function ReviewsSection() {
   const sectionRef = useRef<HTMLElement | null>(null);
@@ -76,7 +78,12 @@ export default function ReviewsSection() {
       </div>
 
       <div className="flex justify-center mt-12 px-6">
-        <Button variant="text">Review Duct Daddy Duct Cleaning</Button>
+        <Link 
+          href="https://www.google.com/search?q=duct+daddy+duct+cleaning&oq=duct+daddy+duct+cleaning&gs_lcrp=EgZjaHJvbWUqCAgAEEUYJxg7MggIABBFGCcYOzIGCAEQIxgnMggIAhAAGBYYHjINCAMQABiGAxiABBiKBTINCAQQABiGAxiABBiKBTIGCAUQRRg8MgYIBhBFGD0yBggHEEUYPdIBCDQ1ODRqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8&lqi=ChhkdWN0IGRhZGR5IGR1Y3QgY2xlYW5pbmdI1bzF09mxgIAIWioQABABEAIQAxgAGAEYAhgDIhhkdWN0IGRhZGR5IGR1Y3QgY2xlYW5pbmeSARlhaXJfZHVjdF9jbGVhbmluZ19zZXJ2aWNlmgEkQ2hkRFNVaE5NRzluUzBWSlEwRm5UVVJ2TUU0dFFYbEJSUkFCqgFbCg0vZy8xMWtxZjcycmxwCgkvbS8wZl9jN3MQATIfEAEiG3Df1FoC_yzDZU4Go9wx7upUWEq7SIEdYbwGTTIcEAIiGGR1Y3QgZGFkZHkgZHVjdCBjbGVhbmluZ-ABAPoBBAgTEDs#lkt=LocalPoiReviews&lrd=0x87c113eb4a122715:0xb52bc5120c0f274,3,,,,&rlimm=815921539135369844"
+          target="_blank"
+        >
+          <Button Icon={FaStar} variant="text">Review Duct Daddy Duct Cleaning</Button>
+        </Link>
       </div>
     </section>
   );
