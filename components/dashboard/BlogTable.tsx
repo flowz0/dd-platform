@@ -61,7 +61,7 @@ export default function BlogTable() {
           {blogs.length > 0 ? (
             blogs.map((blog) => {
               const slug = `${slugify(blog.title)}-${blog._id}`;
-              const id = `${blog._id}`;
+              const blogId = `${blog._id}`;
               return (
                 <tr key={blog._id} className="even:bg-white90/40 even:text-white25 odd:bg-white75/40 odd:text-white10">
                   <td className="py-4 px-6 font-p truncate max-w-0">
@@ -84,7 +84,11 @@ export default function BlogTable() {
                           </svg>
                         </button>
                       </Link>
-                      <DeleteBlogBtn deleteHref={id} ariaLabel={blog.title} refetchBlogs={refetchBlogs} />
+                      <DeleteBlogBtn
+                        deleteHref={blogId}
+                        ariaLabel={blog.title}
+                        refetchBlogs={refetchBlogs}
+                      />
                     </div>
                   </td>
                 </tr>
