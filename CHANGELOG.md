@@ -1,3 +1,10 @@
+## [1.2.18](https://github.com/flowz0/dd-platform/compare/v1.2.17...v1.2.18) (2025-07-31)
+
+
+### Bug Fixes
+
+* create not-found pages ([3021623](https://github.com/flowz0/dd-platform/commit/3021623c0f418cd14b916c96fe8ea4b05788449a))
+
 ## [1.2.17](https://github.com/flowz0/dd-platform/compare/v1.2.16...v1.2.17) (2025-07-31)
 
 
