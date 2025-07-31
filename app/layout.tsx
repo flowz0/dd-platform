@@ -103,7 +103,13 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
-        <Toaster />
+        <Toaster
+          toastOptions={{
+            style: {
+              backgroundColor: "#F2F2F2",
+            }
+          }}
+        />
         <main>{children}</main>
       </body>
     </html>
