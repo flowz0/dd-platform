@@ -1,3 +1,10 @@
+## [1.2.15](https://github.com/flowz0/dd-platform/compare/v1.2.14...v1.2.15) (2025-07-31)
+
+
+### Bug Fixes
+
+* implement dynamic slug route for blogs ([839a101](https://github.com/flowz0/dd-platform/commit/839a1012e61fe33e151f185d6155741460d8aa5c))
+
 ## [1.2.14](https://github.com/flowz0/dd-platform/compare/v1.2.13...v1.2.14) (2025-07-31)
 
 
