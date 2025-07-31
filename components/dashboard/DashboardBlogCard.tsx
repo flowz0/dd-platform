@@ -19,7 +19,11 @@ export default function DashboardBlogCard({
 }: DashboardBlogCard) {
   return (
     <div className="bg-white90 py-4 px-4 rounded-lg">
-      <h6 className="text-white10 text-h6 font-bold line-clamp-2">{title}</h6>
+      <Link href={`/blog/${href}`} target="_blank">
+        <h6 className="text-white10 text-h6 font-bold line-clamp-2">
+          {title}
+        </h6>
+      </Link>
       <p className="text-white25 text-p mt-2 line-clamp-3">{summary}</p>
       <p className="text-white25 text-small mt-2">{formatDate(date)}</p>
       <div className="space-x-4 mt-4">
