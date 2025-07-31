@@ -1,3 +1,12 @@
+## [1.2.19](https://github.com/flowz0/dd-platform/compare/v1.2.18...v1.2.19) (2025-07-31)
+
+
+### Bug Fixes
+
+* pass blogId to DeleteBlogBtn in BlogTable component ([4b9f2ff](https://github.com/flowz0/dd-platform/commit/4b9f2ffaa8adbfcb4f4eb244f09ce5e15192c796))
+* update DashboardBlogCard href prop id in BlogCards component ([c06bc1c](https://github.com/flowz0/dd-platform/commit/c06bc1cefd1a6cb90e72f765dcb449bbbc6f5ebc))
+* update DeleteBlogModal component style customization ([109f8f4](https://github.com/flowz0/dd-platform/commit/109f8f4e6b439ce371a439f11eda2d8631486bf0))
+
 ## [1.2.18](https://github.com/flowz0/dd-platform/compare/v1.2.17...v1.2.18) (2025-07-31)
 
 
