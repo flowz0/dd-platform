@@ -120,7 +120,7 @@ export default function Navbar() {
                   <Link
                     key={href}
                     href={href}
-                    className={`text-h6 font-bold py-4 ${pathname === href
+                    className={`text-p font-bold py-4 ${pathname === href
                       ? "text-primary"
                       : "text-white25 hover:text-white10"
                       }`}
