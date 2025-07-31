@@ -1,3 +1,10 @@
+## [1.2.14](https://github.com/flowz0/dd-platform/compare/v1.2.13...v1.2.14) (2025-07-31)
+
+
+### Bug Fixes
+
+* decrease nav link font size to improve UX/UI on laptops ([29e7dd7](https://github.com/flowz0/dd-platform/commit/29e7dd7028de3e1337d0b4a8389bad61dfe90310))
+
 ## [1.2.13](https://github.com/flowz0/dd-platform/compare/v1.2.12...v1.2.13) (2025-07-30)
 
 
