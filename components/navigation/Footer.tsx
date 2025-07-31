@@ -11,10 +11,10 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-y-12 w-full sm:grid-cols-2 sm:justify-between lg:grid-cols-4">
           <div className="flex flex-col justify-between w-fit">
             {/* brand */}
-            <Link href="/">
+            <Link href="/" className="w-fit">
               <Image
                 src={DuctDaddyLogo}
-                alt="Netflows brand"
+                alt="Duct Daddy Duct Cleaning logo"
                 className="w-28 h-full"
                 quality={100}
                 priority={false}

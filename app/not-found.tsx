@@ -1,4 +1,4 @@
-import Footer from "@/components/home/Footer";
+import Footer from "@/components/navigation/Footer";
 import Navbar from "@/components/navigation/Navbar"
 import Button from "@/components/ui/Button";
 import Link from "next/link";
