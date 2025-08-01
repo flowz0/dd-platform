@@ -39,7 +39,7 @@ export default async function EditBlogPage({
   }
 
   return (
-    <div className="py-32 px-6 lg:pt-16">
+    <div className="pt-32 pb-16 px-6 lg:pt-16">
       <div className="flex items-center justify-between w-full md:w-[680px]">
         <h1 className="text-white10 text-h4 font-bold text-wrap lg:text-h3">
           Edit blog post
