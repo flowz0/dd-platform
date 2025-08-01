@@ -1,3 +1,10 @@
+## [1.2.23](https://github.com/flowz0/dd-platform/compare/v1.2.22...v1.2.23) (2025-08-01)
+
+
+### Bug Fixes
+
+* disable Reviews link in dashboard Navigation ([185960a](https://github.com/flowz0/dd-platform/commit/185960a92d19427ed174dc38284604eff559719e))
+
 ## [1.2.22](https://github.com/flowz0/dd-platform/compare/v1.2.21...v1.2.22) (2025-08-01)
 
 
