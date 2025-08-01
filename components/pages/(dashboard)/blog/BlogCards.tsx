@@ -62,7 +62,8 @@ export default function BlogCards() {
               title={blog.title}
               summary={blog.summary}
               date={blog.createdAt!}
-              href={id}
+              blogId={id}
+              blogSlug={`${blog.title}-${id}`}
               refetchBlogs={refetchBlogs}
             />
           );
