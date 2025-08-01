@@ -187,7 +187,7 @@ export default function CreateBlogForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="mt-16 flex flex-col gap-y-6 w-full md:w-[680px]" noValidate>
+    <form onSubmit={handleSubmit} className="mt-12 flex flex-col gap-y-6 w-full lg:max-w-[800px]" noValidate>
       <FormInput
         name="title"
         label="Blog title"
