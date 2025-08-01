@@ -35,7 +35,7 @@ export default async function EditBlogPage({
   // Enforce correct slug for SEO
   const correctSlug = `${slugify(blog.title)}-${blog._id}`;
   if (slug !== correctSlug) {
-    redirect(`/blog/${correctSlug}`);
+    redirect(`/manage-blog/edit/${correctSlug}`);
   }
 
   return (
