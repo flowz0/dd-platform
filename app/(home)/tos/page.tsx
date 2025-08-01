@@ -1,6 +1,6 @@
 export default function TOSPage() {
   return (
-    <div className="pt-48 max-w-7xl px-6 mx-auto">
+    <div className="pt-32 max-w-7xl px-6 mx-auto sm:pt-48">
       <section>
         <h1 className="text-white10 text-h2 font-bold sm:text-h1">
           Terms of Service
