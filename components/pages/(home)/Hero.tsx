@@ -1,10 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import Button from "../ui/Button";
 import KansasCityImg from "@/public/assets/kansas-city.png";
 import DuctDaddyVanImg from "@/public/assets/duct-daddy-vehicle-shadow.png";
 import Link from "next/link";
+import Button from "@/components/ui/Button";
 
 export default function Hero() {
   return (

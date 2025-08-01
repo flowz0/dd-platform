@@ -1,11 +1,11 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import LoadingSpinner from "../ui/LoadingSpinner";
-import DashboardBlogCard from "./DashboardBlogCard";
 import { BlogProps } from "@/types/blog";
 import { useRouter } from "next/navigation";
 import axios from "axios";
+import LoadingSpinner from "@/components/ui/LoadingSpinner";
+import DashboardBlogCard from "./DashboardBlogCard";
 
 export default function BlogCards() {
   const [authorized, setAuthorized] = useState(false);

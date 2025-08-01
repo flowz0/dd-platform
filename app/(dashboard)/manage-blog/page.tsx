@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Metadata } from "next";
-import BlogTable from "@/components/pages/(dashboard)/BlogTable";
-import BlogCards from "@/components/pages/(dashboard)/BlogCards";
+import BlogTable from "@/components/pages/(dashboard)/blog/BlogTable";
+import BlogCards from "@/components/pages/(dashboard)/blog/BlogCards";
 
 export const metadata: Metadata = {
   title: "Dashboard",
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function ManageBlogPage() {
   return (
-    <div className="pt-20 px-6 lg:pt-12">
+    <div className="py-20 px-6 lg:pt-12">
       <div className="flex flex-col md:flex-row md:items-center md:justify-between">
         <div>
           <h1 className="text-white10 text-h4 font-bold lg:text-h3">

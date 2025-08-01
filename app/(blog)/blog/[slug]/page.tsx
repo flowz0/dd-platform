@@ -1,10 +1,10 @@
-import BlogFeatures from "@/components/(blog)/BlogFeatures";
 import Image from "next/image";
-import BlogSection from "@/components/(blog)/BlogSection";
 import { getBlogById } from "@/lib/blogs";
 import { notFound, redirect } from "next/navigation";
 import { slugify } from "@/lib/slugify";
 import { extractIdFromSlug } from "@/lib/extractidFromSlug";
+import BlogFeatures from "@/components/pages/(blog)/BlogFeatures";
+import BlogSection from "@/components/pages/(blog)/BlogSection";
 
 export async function generateMetadata({
   params,

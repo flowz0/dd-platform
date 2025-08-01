@@ -3,12 +3,12 @@
 import { BlogProps } from "@/types/blog";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
-import LoadingSpinner from "../ui/LoadingSpinner";
 import formatDate from "@/lib/formatDate";
 import Link from "next/link";
 import DeleteBlogBtn from "./DeleteBlogBtn";
 import axios from "axios";
 import { slugify } from "@/lib/slugify";
+import LoadingSpinner from "@/components/ui/LoadingSpinner";
 
 export default function BlogTable() {
   const [blogs, setBlogs] = useState<BlogProps[]>([]);

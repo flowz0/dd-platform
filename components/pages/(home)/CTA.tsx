@@ -1,7 +1,7 @@
 import Image from "next/image";
 import DuctDaddyVan from "@/public/assets/duct-daddy-vehicle.png";
-import Button from "../ui/Button";
 import Link from "next/link";
+import Button from "@/components/ui/Button";
 
 export default function CTASection() {
   return (

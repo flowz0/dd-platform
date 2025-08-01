@@ -1,10 +1,10 @@
 "use client";
 
-import FAQSection from "@/components/(home)/faqs/FAQs";
-import ReviewsSection from "@/components/(home)/reviews/Reviews";
-import ServiceAreaSection from "@/components/(home)/service-area/ServiceArea";
-import ServicesSection from "@/components/(home)/services/Services";
-import WhyUsSection from "@/components/(home)/why/WhyUs";
+import FAQSection from "@/components/pages/(home)/faqs/FAQs";
+import ReviewsSection from "@/components/pages/(home)/reviews/Reviews";
+import ServiceAreaSection from "@/components/pages/(home)/service-area/ServiceArea";
+import ServicesSection from "@/components/pages/(home)/services/Services";
+import WhyUsSection from "@/components/pages/(home)/why/WhyUs";
 import BookingHeroSection from "@/components/pages/booking/BookingHero";
 import { usePathname } from "next/navigation";
 import { useEffect } from "react";

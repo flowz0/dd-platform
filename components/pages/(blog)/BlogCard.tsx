@@ -1,10 +1,10 @@
 import Image from "next/image";
-import Button from "../ui/Button";
 import PlaceholderImg from "@/public/placeholder/1920x1080.svg";
 import { BlogProps } from "@/types/blog";
 import formatDate from "@/lib/formatDate";
 import Link from "next/link";
 import { slugify } from "@/lib/slugify";
+import Button from "@/components/ui/Button";
 
 interface BlogCardProps {
   blog: BlogProps;
