@@ -24,7 +24,7 @@ export default function Footer() {
             </Link>
             <div className="mt-8">
               <p className="text-black75 text-small font-inter">
-                ©2025 Duct Daddy, LLC.
+                ©2025 Duct Daddy
               </p>
               <p className="text-black75 text-small font-inter">
                 <Link href="/tos" className="transition-colors duration-300 ease-in-out hover:text-primary">Terms of Service</Link>

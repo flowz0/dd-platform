@@ -1,8 +1,10 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ReactNode } from "react";
+import DuctDaddyBrand from "@/public/assets/duct-daddy-brand.png";
 
 interface SidebarLinkProps {
   href: string;
@@ -45,9 +47,14 @@ function SidebarLink({ href, label, icon, activeIcon, className, disabled = fals
 export default function Sidebar() {
   return (
     <div className="h-full py-8 px-6 border-r border-white75/60 hidden lg:block">
-      <div className="flex justify-center">
-        <Link href="/" className="text-white25 text-p font-medium">
-          Duct Daddy, LLC
+      <div className="flex flex-col items-center">
+        <Image
+          src={DuctDaddyBrand}
+          alt="Duct Daddy logo"
+          className="w-32 h-full object-cover"
+        />
+        <Link href="/" className="text-white10 text-p font-medium sr-only">
+          Duct Daddy
         </Link>
       </div>
       <div className="mt-8 flex flex-col gap-y-2">

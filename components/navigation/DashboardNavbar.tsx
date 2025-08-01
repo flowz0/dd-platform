@@ -50,47 +50,54 @@ export default function DashboardNavbar() {
 
   return (
     <nav className="lg:hidden">
-      <div className="h-[64px] bg-white95 w-full fixed z-30 transition-all duration-100 ease-in-out flex items-center px-6">
-        <div className="flex items-center gap-x-4">
+      <div className="h-[96px] bg-white95 w-full fixed z-30 transition-all duration-100 ease-in-out flex items-center px-6">
+        <div className="flex items-center justify-between w-full">
+          <Link href="/" className="flex items-center gap-x-5">
+            <Image
+              src={DuctDaddyBrandImg}
+              alt="Duct Daddy logo"
+              className="w-28 h-full object-cover"
+            />
+            <p className="sr-only text-white10 text-p font-medium">
+              Duct Daddy
+            </p>
+          </Link>
           <button onClick={() => setIsOpen(!isOpen)}>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="text-white50 size-8">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="text-white25 size-10">
               <path fillRule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clipRule="evenodd" />
             </svg>
           </button>
-          <Link href={"/"} className="text-white10 text-p">
-            Duct Daddy, LLC
-          </Link>
         </div>
       </div>
 
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            initial={{ x: "-480px" }}
+            initial={{ x: "480px" }}
             animate={{ x: 0 }}
-            exit={{ x: "-480px" }}
+            exit={{ x: "480px" }}
             transition={{ duration: 0.15, ease: "easeInOut" }}
-            className={`bg-white95 w-full sm:w-[480px] shadow-lg shadow-white75 h-screen fixed z-40`}
+            className={`bg-white95 w-full sm:w-[480px] shadow-lg shadow-white75 h-screen fixed right-0 z-40`}
           >
             <motion.div
-              className="h-[64px] flex items-center px-6">
+              className="h-[96px] flex justify-end items-center px-6">
               <button onClick={() => setIsOpen(!isOpen)}>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="text-white25 size-8">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="text-white25 size-10">
                   <path fillRule="evenodd" d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z" clipRule="evenodd" />
                 </svg>
               </button>
             </motion.div>
-            <div className="mt-8 px-6 flex flex-col items-center justify-center">
+            <div className="px-6 flex flex-col items-center justify-center">
               <Image
                 src={DuctDaddyBrandImg}
                 alt="Duct Daddy Duct Cleaning logo"
-                className="w-32 h-full object-cover"
+                className="w-40 h-full object-cover"
               />
-              <p className="text-white25 text-p mt-4">
-                Duct Daddy, LLC
+              <p className="text-white10 text-p font-medium sr-only">
+                Duct Daddy
               </p>
             </div>
-            <div className="mt-12 flex flex-col gap-y-2 px-6">
+            <div className="mt-8 flex flex-col gap-y-2 px-6">
               <SidebarLink
                 href="/dashboard"
                 label="Dashboard"
