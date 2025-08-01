@@ -48,7 +48,7 @@ export default function NavbarDropdown({
             transition={{ duration: 0.2, ease: "easeOut" }}
             className="absolute left-[-16px] top-full w-64 rounded-lg bg-white95 outline outline-white75 shadow shadow-white75 z-40"
           >
-            <ul className="flex flex-col py-4 px-2">
+            <ul className="flex flex-col py-4 px-2 gap-y-1">
               {items.map(({ label, href }) => {
                 const isActive = pathname === href;
                 return (
