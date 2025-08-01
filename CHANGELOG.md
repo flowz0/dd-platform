@@ -1,3 +1,12 @@
+## [1.2.21](https://github.com/flowz0/dd-platform/compare/v1.2.20...v1.2.21) (2025-08-01)
+
+
+### Bug Fixes
+
+* create Reviews SidebarLink to Sidebar component ([7b58f5c](https://github.com/flowz0/dd-platform/commit/7b58f5c985b6194bc900001055194dd9582fa4cf))
+* improve frontend file structure ([886e554](https://github.com/flowz0/dd-platform/commit/886e554aad80ec93933d135644016a96d7551b1a))
+* update imports due to file restructure ([9a9b3fd](https://github.com/flowz0/dd-platform/commit/9a9b3fd46fd441b5754f19bed87eb38662a7c2f8))
+
 ## [1.2.20](https://github.com/flowz0/dd-platform/compare/v1.2.19...v1.2.20) (2025-07-31)
 
 
