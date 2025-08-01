@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function ManageBlogPage() {
   return (
-    <div className="py-20 px-6 lg:pt-12">
+    <div className="py-32 px-6 lg:pt-16">
       <div className="flex flex-col md:flex-row md:items-center md:justify-between">
         <div>
           <h1 className="text-white10 text-h4 font-bold lg:text-h3">
