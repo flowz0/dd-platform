@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function ManageBlogPage() {
   return (
     <div className="pt-32 pb-16 px-6 lg:pt-16">
-      <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+      <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between">
         <div>
           <h1 className="text-white10 text-h4 font-bold lg:text-h3">
             Blogs
@@ -22,7 +22,7 @@ export default function ManageBlogPage() {
         </div>
         <Link
           href={"/manage-blog/create"}
-          className="flex items-center gap-x-2 rounded-lg text-p cursor-pointer py-4 px-8 w-fit mt-8 md:mt-0 bg-primary text-white95 hover:shadow-lg hover:shadow-primary/20"
+          className="flex items-center gap-x-2 rounded-lg text-p cursor-pointer py-3 px-6 w-fit mt-8 lg:mt-0 bg-primary text-white95 transition-transform duration-300 delay-150 ease-in-out hover:-translate-y-1 active:-translate-y-0"
         >
           Create blog
         </Link>
