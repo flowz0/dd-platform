@@ -1,3 +1,13 @@
+## [1.2.22](https://github.com/flowz0/dd-platform/compare/v1.2.21...v1.2.22) (2025-08-01)
+
+
+### Bug Fixes
+
+* **dashboard:** update edit blog link to use blogSlug and delete blog to use blogId for blog components ([f6160b2](https://github.com/flowz0/dd-platform/commit/f6160b222cae8494a8c3f8b1b73ad0a4452e3f01))
+* improve Link spacing in NavbarDropdown component ([a798494](https://github.com/flowz0/dd-platform/commit/a7984946c4933f6276cff250e8c9bf0ee751be50))
+* improve responsive top padding in Privacy and TOS pages ([038aaa7](https://github.com/flowz0/dd-platform/commit/038aaa7f7d56d15007d78f461137818a30af04f9))
+* update redirect url in (dashboard)/manage-blog/edit/[slug]/page ([a7b9c2e](https://github.com/flowz0/dd-platform/commit/a7b9c2efebb6de631385e9a78473f57ef9025ca2))
+
 ## [1.2.21](https://github.com/flowz0/dd-platform/compare/v1.2.20...v1.2.21) (2025-08-01)
 
 
