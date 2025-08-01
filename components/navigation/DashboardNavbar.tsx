@@ -56,7 +56,7 @@ export default function DashboardNavbar() {
             <Image
               src={DuctDaddyBrandImg}
               alt="Duct Daddy logo"
-              className="w-28 h-full object-cover"
+              className="h-16 w-auto"
             />
             <p className="sr-only text-white10 text-p font-medium">
               Duct Daddy
@@ -88,16 +88,18 @@ export default function DashboardNavbar() {
               </button>
             </motion.div>
             <div className="px-6 flex flex-col items-center justify-center">
-              <Image
-                src={DuctDaddyBrandImg}
-                alt="Duct Daddy Duct Cleaning logo"
-                className="w-40 h-full object-cover"
-              />
+              <Link href="/">
+                <Image
+                  src={DuctDaddyBrandImg}
+                  alt="Duct Daddy Duct Cleaning logo"
+                  className="h-20 w-auto"
+                />
+              </Link>
               <p className="text-white10 text-p font-medium sr-only">
                 Duct Daddy
               </p>
             </div>
-            <div className="mt-8 flex flex-col gap-y-2 px-6">
+            <div className="mt-12 flex flex-col gap-y-2 px-6">
               <SidebarLink
                 href="/dashboard"
                 label="Dashboard"

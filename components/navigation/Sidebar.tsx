@@ -48,11 +48,13 @@ export default function Sidebar() {
   return (
     <div className="h-full py-8 px-6 border-r border-white75/60 hidden lg:block">
       <div className="flex flex-col items-center">
-        <Image
-          src={DuctDaddyBrand}
-          alt="Duct Daddy logo"
-          className="w-32 h-full object-cover"
-        />
+        <Link href="/">
+          <Image
+            src={DuctDaddyBrand}
+            alt="Duct Daddy logo"
+            className="h-16 w-auto"
+          />
+        </Link>
         <Link href="/" className="text-white10 text-p font-medium sr-only">
           Duct Daddy
         </Link>
