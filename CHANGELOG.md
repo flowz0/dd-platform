@@ -1,3 +1,11 @@
+## [1.2.24](https://github.com/flowz0/dd-platform/compare/v1.2.23...v1.2.24) (2025-08-01)
+
+
+### Bug Fixes
+
+* improve responsive spacing in Dashboard pages ([58f93eb](https://github.com/flowz0/dd-platform/commit/58f93ebbd56833c78d7a418297c8d9df10223205))
+* improve UX/UI for Dashboard Navbar and Sidebar components ([182c891](https://github.com/flowz0/dd-platform/commit/182c8913d9c13d8a4a747dd1123dc8c051b38586))
+
 ## [1.2.23](https://github.com/flowz0/dd-platform/compare/v1.2.22...v1.2.23) (2025-08-01)
 
 
