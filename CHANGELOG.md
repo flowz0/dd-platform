@@ -1,3 +1,13 @@
+## [1.2.25](https://github.com/flowz0/dd-platform/compare/v1.2.24...v1.2.25) (2025-08-01)
+
+
+### Bug Fixes
+
+* create Link for Image to home page in Dashboard navigation components ([dbe7361](https://github.com/flowz0/dd-platform/commit/dbe7361f374f6d1d67233081e4f22b50b3ff5cf6))
+* improve responsive padding in dashboard manage-blog pages ([38c96c9](https://github.com/flowz0/dd-platform/commit/38c96c97c55d5737ca6e6fd7dadf597e7dde35a5))
+* improve responsive spacing in dashboard manage-blog components ([35a47ce](https://github.com/flowz0/dd-platform/commit/35a47ce61e9096139bee153adeacea9c234fcdc8))
+* update Create Blog button style in dashboard manage-blog page ([a64cca1](https://github.com/flowz0/dd-platform/commit/a64cca128d32f12da5cbb247157db91eeb3f8079))
+
 ## [1.2.24](https://github.com/flowz0/dd-platform/compare/v1.2.23...v1.2.24) (2025-08-01)
 
 
