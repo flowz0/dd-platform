@@ -11,9 +11,10 @@ const Button = ({
   iconAlign,
   Icon = FaArrowRight,
   dataToken,
-  dataOrgname
+  dataOrgname,
+  iconSize = "w-4 h-4"
 }: ButtonProps) => {
-  const baseStyle = "rounded-lg text-p cursor-pointer";
+  const baseStyle = "rounded-lg text-p font-bold cursor-pointer";
   const variantStyle = {
     text: "bg-primary/10 text-primary",
     primary: "bg-primary text-white95",
@@ -35,13 +36,13 @@ const Button = ({
     >
       {iconAlign && (
         <div>
-          <Icon className="w-4 h-4" />
+          <Icon className={`${iconSize}`} />
         </div>
       )}
       {children}
       {!iconAlign && (
         <div>
-          <Icon className="w-4 h-4" />
+          <Icon className={`${iconSize}`} />
         </div>
       )}
     </button>
