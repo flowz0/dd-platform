@@ -11,4 +11,5 @@ export interface ButtonProps {
   Icon?: ElementType;
   dataToken?: string;
   dataOrgname?: string;
+  iconSize?: string;
 }
