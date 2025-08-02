@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function ManageBlogPage() {
   return (
-    <div className="pt-32 pb-16 px-6 lg:pt-16">
+    <div className="pt-32 pb-16 px-6 md:pb-0 lg:pt-16">
       <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between">
         <div>
           <h1 className="text-white10 text-h4 font-bold lg:text-h3">
