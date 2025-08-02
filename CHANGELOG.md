@@ -1,3 +1,11 @@
+## [1.2.28](https://github.com/flowz0/dd-platform/compare/v1.2.27...v1.2.28) (2025-08-02)
+
+
+### Bug Fixes
+
+* add Calendar icon to Button in Hero component ([20621e8](https://github.com/flowz0/dd-platform/commit/20621e875650b2e9c2a86312634ab56db23cba28))
+* capitalize Button text in Navbar component ([8728cf4](https://github.com/flowz0/dd-platform/commit/8728cf4066ce69b60347a89177f19856b6af9f01))
+
 ## [1.2.27](https://github.com/flowz0/dd-platform/compare/v1.2.26...v1.2.27) (2025-08-02)
 
 
