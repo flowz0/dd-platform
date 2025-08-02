@@ -1,3 +1,12 @@
+## [1.2.27](https://github.com/flowz0/dd-platform/compare/v1.2.26...v1.2.27) (2025-08-02)
+
+
+### Bug Fixes
+
+* add calendar icon to book online button in Navbar component ([de2df26](https://github.com/flowz0/dd-platform/commit/de2df26b09dcbddb31d77b776e48fb88f4a4990c))
+* add iconSize and font-bold to Button component ([2658d46](https://github.com/flowz0/dd-platform/commit/2658d4641f6d344d649006a0c962c1a1eb029a39))
+* decrease margin top for button in Hero component ([c365d76](https://github.com/flowz0/dd-platform/commit/c365d76da79d028037f4f5930429a0b429b737a1))
+
 ## [1.2.26](https://github.com/flowz0/dd-platform/compare/v1.2.25...v1.2.26) (2025-08-02)
 
 
