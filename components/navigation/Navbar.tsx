@@ -10,7 +10,7 @@ import DuctDaddyBrand from "@/public/assets/duct-daddy-brand.png";
 import Button from "../ui/Button";
 import { FaPhoneAlt } from "react-icons/fa";
 import NavbarDropdown from "./NavbarDropdown";
-import { FaAngleRight, FaArrowLeft } from "react-icons/fa";
+import { FaAngleRight, FaArrowLeft, FaCalendarAlt } from "react-icons/fa";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -153,7 +153,7 @@ export default function Navbar() {
                   </Button>
                 </Link>
                 <Link href="/booking">
-                  <Button size="sm" className="hidden lg:flex" variant="primary">
+                  <Button Icon={FaCalendarAlt} size="sm" className="hidden lg:flex" variant="primary">
                     Book online
                   </Button>
                 </Link>
