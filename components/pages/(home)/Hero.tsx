@@ -30,7 +30,7 @@ export default function Hero() {
                 <br className="hidden sm:inline-block" />
                 Cleaning Experts
               </h1>
-              <Link href={"/booking"} className="mt-12">
+              <Link href={"/booking"} className="mt-8">
                 <Button size="sm" variant="primary">
                   Book Air Duct Cleaning Today
                 </Button>
