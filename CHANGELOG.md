@@ -1,3 +1,10 @@
+## [1.2.26](https://github.com/flowz0/dd-platform/compare/v1.2.25...v1.2.26) (2025-08-02)
+
+
+### Bug Fixes
+
+* remove bottom padding for lg viewports in dashboard manage-blog page ([02c7e8c](https://github.com/flowz0/dd-platform/commit/02c7e8c4c42b17ae67c5d36b18fb9ce75a3c9f28))
+
 ## [1.2.25](https://github.com/flowz0/dd-platform/compare/v1.2.24...v1.2.25) (2025-08-01)
 
 
