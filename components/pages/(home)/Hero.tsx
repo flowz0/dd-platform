@@ -5,6 +5,7 @@ import KansasCityImg from "@/public/assets/kansas-city.png";
 import DuctDaddyVanImg from "@/public/assets/duct-daddy-vehicle-shadow.png";
 import Link from "next/link";
 import Button from "@/components/ui/Button";
+import { FaCalendarAlt } from "react-icons/fa";
 
 export default function Hero() {
   return (
@@ -31,8 +32,8 @@ export default function Hero() {
                 Cleaning Experts
               </h1>
               <Link href={"/booking"} className="mt-8">
-                <Button size="sm" variant="primary">
-                  Book Air Duct Cleaning Today
+                <Button Icon={FaCalendarAlt} iconAlign iconSize="size-5" variant="primary">
+                  Book Your Cleaning Today
                 </Button>
               </Link>
             </div>

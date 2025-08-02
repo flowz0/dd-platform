@@ -149,12 +149,12 @@ export default function Navbar() {
                     iconAlign
                     className="hidden lg:flex"
                   >
-                    Call us
+                    Call Us
                   </Button>
                 </Link>
                 <Link href="/booking">
                   <Button Icon={FaCalendarAlt} size="sm" className="hidden lg:flex" variant="primary">
-                    Book online
+                    Book Online
                   </Button>
                 </Link>
               </div>
