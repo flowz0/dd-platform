@@ -1,6 +1,9 @@
+import TrackView from "@/hooks/useTrackView";
+
 export default function PrivacyPage() {
   return (
     <div className="pt-32 max-w-7xl px-6 mx-auto sm:pt-48">
+      <TrackView slug={"Privacy"} />
       <section>
         <h1 className="text-white10 text-h2 font-bold sm:text-h1">
           Privacy Policy

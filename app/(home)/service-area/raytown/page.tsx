@@ -5,6 +5,7 @@ import ServiceAreaSection from "@/components/pages/(home)/service-area/ServiceAr
 import ServicesSection from "@/components/pages/(home)/services/Services";
 import WhyUsSection from "@/components/pages/(home)/why/WhyUs";
 import ServiceHeroSection from "@/components/pages/services/ServiceHero";
+import TrackView from "@/hooks/useTrackView";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -15,6 +16,7 @@ export const metadata: Metadata = {
 export default function RaytownPage() {
   return (
     <div>
+      <TrackView slug={"Service Area - Raytown"} />
       <ServiceHeroSection
         service="Raytown's Trusted Air Duct & Dryer Vent Cleaning Experts"
         desc="Family-owned and operated, serving Kansas City and surrounding areas with clean, healthy air since 2023."

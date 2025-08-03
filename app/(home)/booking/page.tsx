@@ -6,6 +6,7 @@ import ServiceAreaSection from "@/components/pages/(home)/service-area/ServiceAr
 import ServicesSection from "@/components/pages/(home)/services/Services";
 import WhyUsSection from "@/components/pages/(home)/why/WhyUs";
 import BookingHeroSection from "@/components/pages/booking/BookingHero";
+import TrackView from "@/hooks/useTrackView";
 import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 
@@ -45,6 +46,7 @@ export default function BookingPage() {
 
   return (
     <div>
+      <TrackView slug={"Booking"} />
       <BookingHeroSection handleClick={handleClick} />
       <ServicesSection />
       <WhyUsSection />

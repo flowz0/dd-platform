@@ -11,10 +11,12 @@ import ReviewsSection from "@/components/pages/(home)/reviews/Reviews";
 import ServiceAreaSection from "@/components/pages/(home)/service-area/ServiceArea";
 import FAQSection from "@/components/pages/(home)/faqs/FAQs";
 import CTASection from "@/components/pages/(home)/CTA";
+import TrackView from "@/hooks/useTrackView";
 
 export default function Page() {
   return (
     <div>
+      <TrackView slug={"Home"} />
       <Navbar />
       <MobileCallBtn />
       <Hero />

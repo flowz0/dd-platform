@@ -5,6 +5,7 @@ import WhyUsSection from "@/components/pages/(home)/why/WhyUs";
 import AboutHeroSection from "@/components/pages/about/AboutHero";
 import AboutStorySection from "@/components/pages/about/AboutStory";
 import MissionSection from "@/components/pages/about/Mission";
+import TrackView from "@/hooks/useTrackView";
 
 import { Metadata } from "next";
 
@@ -16,6 +17,7 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <div>
+      <TrackView slug={"About"} />
       <AboutHeroSection />
       <AboutStorySection />
       <MissionSection />

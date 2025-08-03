@@ -5,6 +5,7 @@ import { slugify } from "@/lib/slugify";
 import { extractIdFromSlug } from "@/lib/extractidFromSlug";
 import BlogFeatures from "@/components/pages/(blog)/BlogFeatures";
 import BlogSection from "@/components/pages/(blog)/BlogSection";
+import TrackView from "@/hooks/useTrackView";
 
 export async function generateMetadata({
   params,
@@ -40,57 +41,60 @@ export default async function Blog({
   }
 
   return (
-    <div className="pt-32 max-w-7xl px-6 mx-auto sm:pt-48">
-      <div className="flex flex-col items-center">
-        <h1 className="text-white10 text-h3 font-bold text-center max-w-5xl sm:text-h1">
-          {blog.title}
-        </h1>
-        <BlogFeatures
-          author={blog.author!}
-          date={blog.createdAt!}
-          readTime={blog.readTime}
-        />
-        <Image
-          src={blog.img}
-          alt={`${blog.title} blog image`}
-          height={1920}
-          width={1080}
-          className="mt-12 aspect-[16/9] h-full w-full object-cover rounded-lg md:mt-16"
-          draggable={false}
-          priority={true}
-          loading="eager"
-        />
-        <div className="max-w-2xl mt-8">
-          <section>
-            <p className="text-white25 text-p mt-8">
-              {blog.summary}
-            </p>
-          </section>
-          <BlogSection desc={blog.paragraph}>
-            {blog.header}
-          </BlogSection>
-          <BlogSection desc={blog.paragraph2}>
-            {blog.header2}
-          </BlogSection>
+    <>
+    <TrackView slug={`blog-${slug}`} />
+      <div className="pt-32 max-w-7xl px-6 mx-auto sm:pt-48">
+        <div className="flex flex-col items-center">
+          <h1 className="text-white10 text-h3 font-bold text-center max-w-5xl sm:text-h1">
+            {blog.title}
+          </h1>
+          <BlogFeatures
+            author={blog.author!}
+            date={blog.createdAt!}
+            readTime={blog.readTime}
+          />
+          <Image
+            src={blog.img}
+            alt={`${blog.title} blog image`}
+            height={1920}
+            width={1080}
+            className="mt-12 aspect-[16/9] h-full w-full object-cover rounded-lg md:mt-16"
+            draggable={false}
+            priority={true}
+            loading="eager"
+          />
+          <div className="max-w-2xl mt-8">
+            <section>
+              <p className="text-white25 text-p mt-8">
+                {blog.summary}
+              </p>
+            </section>
+            <BlogSection desc={blog.paragraph}>
+              {blog.header}
+            </BlogSection>
+            <BlogSection desc={blog.paragraph2}>
+              {blog.header2}
+            </BlogSection>
 
-          {/* optional sections */}
-          {blog.header3 && blog.paragraph3 && (
-            <BlogSection desc={blog.paragraph3}>
-              {blog.header3}
-            </BlogSection>
-          )}
-          {blog.header4 && blog.paragraph4 && (
-            <BlogSection desc={blog.paragraph4}>
-              {blog.header4}
-            </BlogSection>
-          )}
-          {blog.header5 && blog.paragraph5 && (
-            <BlogSection desc={blog.paragraph5}>
-              {blog.header5}
-            </BlogSection>
-          )}
+            {/* optional sections */}
+            {blog.header3 && blog.paragraph3 && (
+              <BlogSection desc={blog.paragraph3}>
+                {blog.header3}
+              </BlogSection>
+            )}
+            {blog.header4 && blog.paragraph4 && (
+              <BlogSection desc={blog.paragraph4}>
+                {blog.header4}
+              </BlogSection>
+            )}
+            {blog.header5 && blog.paragraph5 && (
+              <BlogSection desc={blog.paragraph5}>
+                {blog.header5}
+              </BlogSection>
+            )}
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
