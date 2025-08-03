@@ -7,9 +7,7 @@ export const metadata: Metadata = {
   description: "Stay informed with expert tips on air duct cleaning, dryer vent maintenance, and HVAC care. The Duct Daddy Blog helps Kansas City homeowners breathe cleaner, safer air year-round.",
 };
 
-export default function BlogsPage({ params }: { params: { slug: string } }) {
-  const { slug } = params;
-
+export default function BlogsPage() {
   return (
     <div className="pt-32 max-w-7xl px-6 mx-auto sm:pt-48">
       <div className="flex flex-col items-center">
@@ -20,7 +18,6 @@ export default function BlogsPage({ params }: { params: { slug: string } }) {
         <p className="text-white25 text-p text-center max-w-3xl mt-4">
           Explore expert tips, seasonal advice, and must-know facts about air quality, duct maintenance, and home comfort straight from Kansas City&apos;s duct cleaning professionals.
         </p>
-        <p>{slug}</p>
         <TrackView slug={"Blog"} />
       </div>
 
