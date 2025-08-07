@@ -1,4 +1,4 @@
-# Duct Daddy Duct Cleaning Platform
+# Duct Daddy Platform
 Currently in development
 
 ## Tech Stack:
