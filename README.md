@@ -1,5 +1,5 @@
 # Duct Daddy Platform
 Currently in development
 
-## Tech Stack:
+## Tech Stack
 **Frontend:** Next.js, TypeScript, Tailwind CSS, Framer-Motion
