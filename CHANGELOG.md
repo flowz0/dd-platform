@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/flowz0/dd-platform/compare/v1.2.28...v1.3.0) (2025-09-21)
+
+
+### Features
+
+* install @next/third-parties & implement GoogleAnalytics ([2994218](https://github.com/flowz0/dd-platform/commit/29942189d082e1a53a528cad962a16700ac762a9))
+
 ## [1.2.28](https://github.com/flowz0/dd-platform/compare/v1.2.27...v1.2.28) (2025-08-02)
 
 
