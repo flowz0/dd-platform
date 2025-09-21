@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Arimo } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "react-hot-toast";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const arimo = Arimo({
   variable: "--font-arimo",
@@ -112,6 +113,7 @@ export default function RootLayout({
         />
         <main>{children}</main>
       </body>
+      <GoogleAnalytics gaId="G-4NKNBQTTTE" />
     </html>
   );
 }
