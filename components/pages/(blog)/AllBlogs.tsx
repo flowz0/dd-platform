@@ -57,7 +57,7 @@ export default function AllBlogs() {
 
   return (
     <div ref={blogGridTopRef}>
-      <div className="grid grid-cols-1 gap-y-12 mt-4 sm:grid-cols-2 sm:gap-x-6 md:grid-cols-3">
+      <div className="grid grid-cols-1 gap-y-12 scroll-mt-32 mt-4 sm:grid-cols-2 sm:gap-x-6 md:grid-cols-3">
         {visibleBlogs.map((blog) => (
           <div key={blog._id}>
             <BlogCard blog={blog} />
