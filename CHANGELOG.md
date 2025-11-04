@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/flowz0/dd-platform/compare/v1.3.0...v1.3.1) (2025-11-04)
+
+
+### Bug Fixes
+
+* add scroll mt for show less button smooth UX in AllBlogs component ([8ee98fc](https://github.com/flowz0/dd-platform/commit/8ee98fc548c0cc32aa8be73b3cc3d01e71916d01))
+
 # [1.3.0](https://github.com/flowz0/dd-platform/compare/v1.2.28...v1.3.0) (2025-09-21)
 
 
